@@ -474,13 +474,13 @@
             "settings": {
               "img__special_offer_lg": "shopify:\/\/shop_images\/banner1.jpg",
               "img__special_offer_xs": "shopify:\/\/shop_images\/banner1_37ceb08f-3e18-44fd-a14b-ecee510284bd.jpg",
-              "heading": "<p style=\"color:white; font-weight:200;\">Da Hong Pao<\/p>",
+              "heading": "Quality Meal At Home",
               "subheading": "",
               "mark_enable": true,
-              "color_mark": "#44bb65",
-              "color_mark_text": "#ded5d5",
-              "mark_title": "best Chinese tea",
-              "mark_price": "health",
+              "color_mark": "#4ee377",
+              "color_mark_text": "#fff5f5",
+              "mark_title": "",
+              "mark_price": "Enjoy",
               "btn_url": "shopify:\/\/collections\/snack-box"
             }
           },
@@ -489,13 +489,13 @@
             "settings": {
               "img__special_offer_lg": "shopify:\/\/shop_images\/banner2.jpg",
               "img__special_offer_xs": "shopify:\/\/shop_images\/banner2_a81cc801-a9a7-41ce-a4c2-67554b414275.jpg",
-              "heading": "New - Year",
+              "heading": "New Year Party Gifts",
               "subheading": "",
               "mark_enable": true,
-              "color_mark": "#8cbeb2",
+              "color_mark": "#65aef2",
               "color_mark_text": "#ffffff",
-              "mark_title": "September deal",
-              "mark_price": "40% discount",
+              "mark_title": "with each other",
+              "mark_price": "Together",
               "btn_url": ""
             }
           }

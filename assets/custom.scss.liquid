@@ -70,6 +70,11 @@ $index_slider_height: 92vh;
       }
     }
 
+    .search-container {
+      left: auto;
+      right: 200px;
+    }
+
     //background-color: $header_color;
     //height: 0;
 
@@ -134,13 +139,14 @@ $index_slider_height: 92vh;
 
 //sec2
 #shopify-section-offers-section_1{
+  //overflow: hidden;
   .special-offer-container{
-
     height: 40vh !important;
     overflow: hidden;
   //background: #ffdec2;//url({{ 'img_contact_banner.jpg' | asset_url }});
   //background-size: cover;
     .spesial-offer{
+      float: left;
       //background-color: rgba(0,0,0,.5);
       width: calc(50% - 7.5px) !important;
       min-height: 40vh;
@@ -154,9 +160,34 @@ $index_slider_height: 92vh;
         transition: linear .5s;
         min-height: 60vh !important;
       }
-      .heading--page{
-
+      &.spesial-offer--one{
+        h3 {
+          background-color: rgba(64,90,110, 0.5);
+        }
       }
+      &.spesial-offer--two{
+        float: right;
+        h3 {
+          background-color: rgba(216, 35, 127,1)
+        }
+        .spesial-offer__info:before{
+          margin-right: -30px;
+        }
+      }
+      h3{
+        color: white;
+        font-weight: 600;
+      }
+
+      //
+      //&.spesial-offer--two {
+      //  float: right !important;
+      //  @media (max-width: 760px) {
+      //    float: left !important;
+      //    width: 100%;
+      //  }
+      //}
+
     }
   }
 }
