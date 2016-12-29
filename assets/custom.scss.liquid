@@ -6,7 +6,11 @@ $index_slider_height: 92vh;
 
 
 
-
+.price_bubble{
+  width: calc(100vw/12);
+  height: calc(100vw/12);
+  line-height: calc(100vw/12) !important;
+}
 /*#shopify-section-featured-carouse_l {
   .swiper-slide {
     @media screen and (min-width: 1800px) {
@@ -197,14 +201,17 @@ $index_slider_height: 92vh;
   .section--pack {
     margin-bottom: 50px;
     max-font-size: 120px;
+    max-width: none;
     .pack__image{
       //margin-top: 150px;
     }
     .section-heading{
+      margin-top:30px;
       span{
         font-size: 30%;
         font-weight: 600;
         letter-spacing: 10px;
+
       }
       &:before {
         top: 0;
@@ -212,10 +219,31 @@ $index_slider_height: 92vh;
         color: #eaa9c0;
       }
     }
+    .pack-container{
+      .pack__image{
+        width: 70%;
+        float: left;
+      }
+      .pack__price{
+        font-size: calc(100vw / 50);
+        border-radius: 50%;
+        float: left;
+        background-color: #B5B7C9;
+        color: white;
+      }
+      .pack__desc{
+        width: 30%;
+        float: right;
+      }
+      .form-wrapper{
+        width: 30%;
+        float: right;
+      }
+    }
   }
 }
 
-//sec4
+//sec4 chris box
 #shopify-section-featured-carouse_1 {
   .carousel__navigation {
     height: 360px;
@@ -258,7 +286,7 @@ $index_slider_height: 92vh;
 }
 
 //sec6
-#shopify-section-feature-collections_1{
+/*#shopify-section-feature-collections_1{
   .featured-collections {
     margin-bottom: 0;
     .wrapper {
@@ -270,7 +298,7 @@ $index_slider_height: 92vh;
 
             @media (max-width: 1537px) and (min-width: 770px){
               .featured-collections__item{
-                width: 48% !important;
+                width: 24% !important;
               }
             }
             @media (max-width: 769px){
@@ -292,9 +320,9 @@ $index_slider_height: 92vh;
                   width: 100%;
                   max-width: 100%;
 
-                  /*-moz-transition: all 3s;
+                  !*-moz-transition: all 3s;
                   -webkit-transition: all 3s;
-                  transition: all 3s;*/
+                  transition: all 3s;*!
                   &:hover {
                     position: absolute;
                     transition: all 3s;
@@ -308,8 +336,21 @@ $index_slider_height: 92vh;
       }
     }
   }
-}
+}*/
 
+#shopify-section-feature-collections_1{
+  .featured-collections__item {
+    padding-right: 15px;
+    .img-holder {
+      overflow: hidden;
+      background-color: transparent;
+      img {
+        width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+}
 //product
 //$product_num_in_row= 6;
 
@@ -345,7 +386,7 @@ $index_slider_height: 92vh;
     display: block;
   }
   .empty-div{
-    height: 50vh !important;
+    height: 200px !important;
   }
   .parallax__base{
     float: right;
