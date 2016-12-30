@@ -5,7 +5,19 @@ $index_slider_height: 92vh;
 
 
 
-
+.shopify-section{
+  //margin-bottom: 100px;
+  //margin-left: 400px;
+}
+.section__subtitle{
+  font-size: calc(100vw/50);
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+  @media (max-width: 1080px){
+    font-size: calc(100vw/25);
+  }
+}
 .price_bubble{
   width: calc(100vw/12);
   height: calc(100vw/12);
@@ -115,7 +127,7 @@ $index_slider_height: 92vh;
   .slides{
     .slide{
       height: $index_slider_height;
-      margin-bottom: 15px;
+      margin-bottom: 30px;
     }
     .slide--1{
       .slide__info-wrapper{
@@ -152,7 +164,7 @@ $index_slider_height: 92vh;
     .spesial-offer{
       float: left;
       //background-color: rgba(0,0,0,.5);
-      width: calc(50% - 7.5px) !important;
+      width: calc(50% - 15px) !important;
       min-height: 40vh;
       transition: linear .5s;
       &:before{
@@ -198,12 +210,24 @@ $index_slider_height: 92vh;
 
 //sec3
 #shopify-section-offers-pack_1{
+  margin-top: 50px;
+  margin-bottom: 150px;
+  @media (max-width: 769px){
+    .pack__image{
+      width: 100% !important;
+    }
+    .pack__price{
+      //width: 50%;
+    }
+    .form-wrapper{
+      width: 100% !important;
+    }
+
+  }
   .section--pack {
-    margin-bottom: 50px;
-    max-font-size: 120px;
-    max-width: none;
     .pack__image{
       //margin-top: 150px;
+      margin-bottom: 0;
     }
     .section-heading{
       margin-top:30px;
@@ -223,6 +247,7 @@ $index_slider_height: 92vh;
       .pack__image{
         width: 70%;
         float: left;
+        //margin-left:15%;
       }
       .pack__price{
         font-size: calc(100vw / 50);
@@ -242,6 +267,7 @@ $index_slider_height: 92vh;
     }
   }
 }
+
 
 //sec4 chris box
 #shopify-section-featured-carouse_1 {
@@ -339,20 +365,40 @@ $index_slider_height: 92vh;
 }*/
 
 #shopify-section-feature-collections_1{
-  .featured-collections__item {
-    padding-right: 15px;
-    .img-holder {
-      overflow: hidden;
-      background-color: transparent;
-      img {
-        width: 100%;
-        max-height: 100%;
+    .wrapper{
+    max-width:80%;
+    .featured-collections__item {
+      //padding-right: 0;
+      padding: 5px;
+
+      .img-holder {
+        padding: 20px;
+        overflow: hidden;
+        background-color: transparent;
+        transition: all 600ms;
+        border-left: 20px solid white;
+        border-right: 20px solid white;
+        &:hover{
+          border-left: 20px solid rgba(187, 114, 114, 0.4);
+          border-right: 20px solid rgba(187, 114, 114, 0.4);
+          transition: all 600ms;
+        }
+        img {
+          width: 100%;
+          max-height: 100%;
+        }
       }
     }
   }
 }
 //product
 //$product_num_in_row= 6;
+#shopify-section-1483053216561{
+  .wrapper{
+    border: 20px solid rgba(187, 114, 114, 0.24);
+  }
+}
+
 
 #products{
   .section--page {

@@ -379,20 +379,6 @@
               "subheading_add": "add subheading"
             }
           },
-          "1482378396773": {
-            "type": "slide",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/CNW7401_5bc8147a-8068-436f-a19c-b36fc2a7e7f5.jpg",
-              "image_thumb": "shopify:\/\/shop_images\/CNW7401_aec3e2e7-bcfb-48e2-9dfa-01b7250bc2dd.jpg",
-              "link": "",
-              "heading": "Mocha GuaGua",
-              "subheading": "good and delicious",
-              "price": "$3.05",
-              "price_desc": "start point",
-              "heading_add": "Yes, <strong>Please<\/strong>!",
-              "subheading_add": "Mmmmm..."
-            }
-          },
           "1482379005610": {
             "type": "slide",
             "settings": {
@@ -407,25 +393,11 @@
               "subheading_add": "Mmmmm..."
             }
           },
-          "1482517875043": {
-            "type": "slide",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Untitled-4.jpg",
-              "image_thumb": "shopify:\/\/shop_images\/Untitled-4_5de8e7ee-f5e6-4055-babf-2f98a5f4e263.jpg",
-              "link": "",
-              "heading": "Tomato season",
-              "subheading": "nutritious  delicious",
-              "price": "$3.05",
-              "price_desc": "start point",
-              "heading_add": "Yes, <strong>Please<\/strong>!",
-              "subheading_add": "Mmmmm..."
-            }
-          },
           "1482518171854": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/test2_9ffa611c-899f-46e3-b322-f3c31ab93e5e.jpg",
-              "image_thumb": "shopify:\/\/shop_images\/test2.jpg",
+              "image": "shopify:\/\/shop_images\/CNW5759.jpg",
+              "image_thumb": "shopify:\/\/shop_images\/CNW5759_e4c6f4ac-5072-44a6-abb0-fc2a88ae0b80.jpg",
               "link": "",
               "heading": "Tomato season",
               "subheading": "nutritious  delicious",
@@ -438,9 +410,7 @@
         },
         "block_order": [
           "1477737960076",
-          "1482378396773",
           "1482379005610",
-          "1482517875043",
           "1482518171854"
         ],
         "settings": {
@@ -518,14 +488,6 @@
           "product_rb": "snackoo-house-sweet-box"
         }
       },
-      "subscribe-form_1": {
-        "type": "subscribe-form",
-        "settings": {
-          "heading_html": "Business<br> Values<br> Attitude",
-          "subheading": "Join folks at Foodly family to get the latest news and the best offers",
-          "subheading_overlap": "Family"
-        }
-      },
       "1481843462346": {
         "type": "offers-section",
         "blocks": {
@@ -577,19 +539,12 @@
             "settings": {
               "collection": "test333"
             }
-          /*},
-          "1482362283124": {
-            "type": "collection",
-            "settings": {
-              "collection": "snack-box"
-            }*/
           }
         },
         "block_order": [
           "1482361797784-0",
           "1482361797784-1",
-          "1482361797784-2",
-          "1482362283124"
+          "1482361797784-2"
         ],
         "settings": {}
       },
@@ -599,14 +554,35 @@
           "featured_collection": "",
           "autoplay": ""
         }
+      },
+      "1483053216561": {
+        "type": "offers-product",
+        "settings": {
+          "product": "dahongpao",
+          "custom_image_enable": false,
+          "img_special_product": "",
+          "heading": "Special offer",
+          "subheading_overlap": "New"
+        }
+      },
+      "1483053308240": {
+        "type": "offers-products",
+        "settings": {
+          "image_bg": "shopify:\/\/shop_images\/CNW5759_e4c6f4ac-5072-44a6-abb0-fc2a88ae0b80.jpg",
+          "heading": "Green",
+          "subheading": "It’s for health",
+          "product_left": "",
+          "product_right": ""
+        }
       }
     },
     "content_for_index": [
       "offers-section_1",
       "offers-pack_1",
+      "1483053216561",
       "feature-collections_1",
       "featured-carouse_1",
-      "subscribe-form_1"
+      "1483053308240"
     ]
   }
 }
