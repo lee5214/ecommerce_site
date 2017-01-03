@@ -76,6 +76,10 @@ $index_slider_height: 92vh;
 #shopify-section-header{
   .header{
     height: 170px;
+
+    &:after{
+    opacity:0;}
+
     &.fixed{
       transform: translate3d(0, -100px, 0);
       .search-container{
@@ -117,6 +121,10 @@ $index_slider_height: 92vh;
           }
         }
       }*/
+    }
+    .site-logo--mobile{
+     // left: 0;
+      //width: calc(100vw/10);
     }
 
   }
@@ -225,61 +233,95 @@ $index_slider_height: 92vh;
 
   }
   .section--pack {
-    .pack__image{
-      //margin-top: 150px;
-      margin-bottom: 0;
-    }
-    .section-heading{
-      margin-top:30px;
-      span{
-        font-size: 30%;
-        font-weight: 600;
-        letter-spacing: 10px;
+    .wrapper {
+      border: 20px solid rgba(100, 212, 216, 0.41);
+      .pack__image {
+        //margin-top: 150px;
+        margin-bottom: 0;
+      }
+      .section-heading {
+        margin-top: 30px;
+        span {
+          font-size: 30%;
+          font-weight: 600;
+          letter-spacing: 10px;
 
+        }
+        &:before {
+          top: 0;
+          font-size: 50%;
+          color: #eaa9c0;
+        }
       }
-      &:before {
-        top: 0;
-        font-size: 50%;
-        color: #eaa9c0;
-      }
-    }
-    .pack-container{
-      .pack__image{
-        width: 70%;
-        float: left;
-        //margin-left:15%;
-      }
-      .pack__price{
-        font-size: calc(100vw / 50);
-        border-radius: 50%;
-        float: left;
-        background-color: #B5B7C9;
-        color: white;
-      }
-      .pack__desc{
-        width: 30%;
-        float: right;
-      }
-      .form-wrapper{
-        width: 30%;
-        float: right;
+      .pack-container {
+        .pack__image {
+          width: 70%;
+          float: left;
+          //margin-left:15%;
+        }
+        .pack__price {
+          font-size: calc(100vw / 50);
+          border-radius: 50%;
+          float: left;
+          background-color: #B5B7C9;
+          color: white;
+        }
+        .pack__desc {
+          width: 30%;
+          float: right;
+        }
+        .form-wrapper {
+          width: 30%;
+          float: right;
+        }
       }
     }
   }
 }
-
+#shopify-section-1483214645452{
+  .section{
+    .product{
+      width: 80%;
+      margin-left:10%;
+      .image-wrapper{
+        .img-holder{
+          overflow: visible;
+        }
+      }
+    }
+  }
+}
 
 //sec4 chris box
 #shopify-section-featured-carouse_1 {
   .carousel__navigation {
     height: 360px;
   }
+  svg{
+    fill: #767676;
+    height: 100%;
+    width: 25%;
+    display: block;
+    float: right;
+    &:hover{
+      fill: #ff9097;
+      //background: pink;
+      transition: 200ms;
+    }
+  }
+  .product__link:before {
+      background-color: #ff9097 !important;
+  }
+  .product__link:hover ~ .product__info .product__title{
+      background-color: #ff9097;
+  }
+
   $arrow_size: 100%;
     .homepage-swiper-btn-prev {
-      height: 82px;
-      width: 50px;
-      margin: 60% 40%;
-      img {
+      height: 100%;
+      width: 100%;
+      //margin: 60% 40%;
+      /*img {
         background: rgba(144, 118, 38, 0.33);
         //margin: 80px; //calc(50% - 100px) calc(50% - 100px);
         height: $arrow_size;
@@ -287,12 +329,12 @@ $index_slider_height: 92vh;
         &:hover {
           background: rgba(144, 118, 38, 1);
         }
-      }
+      }*/
     }
     .homepage-swiper-btn-next{
-      height: 82px;
-      width: 50px;
-      margin: 60% 40%;
+      height: 100%;
+      width: 100%;
+      //margin: 60% 40%;
       img {
         background: rgba(144, 118, 38, 0.33);
         //margin: 80px; //calc(50% - 100px) calc(50% - 100px);
@@ -391,13 +433,16 @@ $index_slider_height: 92vh;
     }
   }
 }
-//product
-//$product_num_in_row= 6;
+
 #shopify-section-1483053216561{
   .wrapper{
     border: 20px solid rgba(187, 114, 114, 0.24);
   }
 }
+
+
+//product
+//$product_num_in_row= 6;
 
 
 #products{
@@ -426,10 +471,17 @@ $index_slider_height: 92vh;
 }
 //left right side - product des
 .template-product{
+
   .parallax__back{
     float: left;
     width: 50%;
     display: block;
+    position: relative;
+    .slide{
+      height: 70vh;
+      margin-top: 15vh;
+      margin-bottom: 15vh;
+    }
   }
   .empty-div{
     height: 200px !important;
@@ -438,6 +490,17 @@ $index_slider_height: 92vh;
     float: right;
     display: block;
     width: 50%;
+    height: 80vh;
+    overflow: hidden;
+    .product__info{
+      .product__expense{
+        width:100%;
+      }
+      .form-wrapper{
+        width:100%;
+        margin: 0;
+      }
+    }
 
   }
 }

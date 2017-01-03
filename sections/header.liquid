@@ -87,6 +87,13 @@
           </div> <!-- end drawer__header -->
       
           <ul class="nav-list">
+
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="/">
+                <img src="{{ 'snackoo_logo_simple.png' | asset_url }}" style="min-width:30px; min-height:30px; height: calc(100vw/70); width: calc(100vw/70); vertical-align: middle" title="Snackoo" />
+              </a>
+            </li>
+
             {% comment %}
             Menu with submenu level 2 and level 3
             {% endcomment %}
@@ -133,7 +140,7 @@
                   {% endif %}
                 {% endfor %}
               {% endif %}
-            
+
 
               {% if linklists[child_list_handle] and linklists[child_list_handle].links.size > 0 %}
                 <li class="nav-list__item {% if active %}active{% endif %} has-dropdown {% if third_level == true %} has-dropdown--tertiary{% endif %} {% if child_list_handle == mega_menu_settings and settings.main_menu_collection_enable and settings.main_menu_collections != blank %} nav-list__item--mega {% endif %}">

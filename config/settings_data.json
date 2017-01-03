@@ -37,7 +37,7 @@
     "product_recipe_blog_ingredients": "Ingredients",
     "product_recipe_blog_directions": "Directions",
     "product_similar_enable": true,
-    "product_similar_number": "4",
+    "product_similar_number": "8",
     "product_similar_type": "tags",
     "cart_special_sku": "0001",
     "social_facebook_link": "https:\/\/www.facebook.com\/snackoocom",
@@ -46,15 +46,15 @@
     "social_instagram_link": "https:\/\/www.instagram.com\/snackoocom",
     "social_youtube_link": "https:\/\/www.youtube.com\/user\/snackoocom",
     "social_tumblr_link": "http:\/\/snackoocom.tumblr.com\/",
-    "footer_instagram_user_id": "1735276109",
-    "footer_instagram_access_token": "1735276109.1677ed0.f28e471db7bc47dfb72114959c536d00",
-    "footer_instagram_client": "23b4207860ac400f98bd9759e1000a1e",
-    "footer_instagram_account": "snackoocom",
-    "collection_grid_product_number": "24",
-    "collection_list_product_number": "24",
+    "footer_instagram_user_id": "\/\/1735276109",
+    "footer_instagram_access_token": "\/\/1735276109.1677ed0.f28e471db7bc47dfb72114959c536d00",
+    "footer_instagram_client": "\/\/23b4207860ac400f98bd9759e1000a1e",
+    "footer_instagram_account": "\/\/snackoocom",
+    "collection_grid_product_number": "50",
+    "collection_list_product_number": "50",
     "collection_product_badge": "badge",
     "collection_add_cart_thumb": true,
-    "collection_for_sorting_enable": true,
+    "collection_for_sorting_enable": false,
     "collection_for_sorting": "Collection, Any, test333",
     "collection_sort_tags_enable": true,
     "collection_sort_tags": "Type, Any types, tea, Vegetables, Herbals, Condiments",
@@ -350,16 +350,16 @@
           "1477729734685"
         ],
         "settings": {
-          "color_bg": "#f5f4f4",
+          "color_bg": "#6f7579",
           "footer_img_enable": false,
           "img_footer_bg": "",
-          "foter_above": "instagram",
+          "foter_above": "none",
           "instagram_heading": "Instagram",
           "instagram_subheading": "let’s have a look what is behind the scenes",
           "subscribe_heading": "Get notified",
-          "subscribe_subheading": "joining newsletter from Foodly to get the latest news and offers",
-          "copyright_link": "http:\/\/themeforest.net\/user\/congruityhub\/portfolio",
-          "copyright_link_text": "Theme by Congruity Hub"
+          "subscribe_subheading": "joining newsletter from Snackoo to get the latest news and offers",
+          "copyright_link": "http:\/\/lee5214.com",
+          "copyright_link_text": "Developed by CL"
         }
       },
       "slideshow": {
@@ -368,9 +368,9 @@
           "1477737960076": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/mocha3_40806eb6-a0f0-4a21-aab9-dbc5ec89ddb8.jpg",
-              "image_thumb": "shopify:\/\/shop_images\/mocha3_d1f30a71-3647-4c43-b911-42a039d3509e.jpg",
-              "link": "shopify:\/\/collections\/snack-box",
+              "image": "shopify:\/\/shop_images\/1_388af91f-e92f-4e0a-839f-dcd2a3e3fe57.jpg",
+              "image_thumb": "shopify:\/\/shop_images\/2_2157ef98-17fc-4bfa-9b87-f53076389438.jpg",
+              "link": "shopify:\/\/collections\/three-squirels",
               "heading": "<strong>Mocha Cake<\/strong>",
               "subheading": "flavor from Japan",
               "price": "0.99",
@@ -382,8 +382,8 @@
           "1482379005610": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_7182.jpg",
-              "image_thumb": "shopify:\/\/shop_images\/IMG_7178.jpg",
+              "image": "shopify:\/\/shop_images\/royce4_3.jpg",
+              "image_thumb": "shopify:\/\/shop_images\/square.jpg",
               "link": "",
               "heading": "Tomato season",
               "subheading": "nutritious  delicious",
@@ -396,8 +396,8 @@
           "1482518171854": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/CNW5759.jpg",
-              "image_thumb": "shopify:\/\/shop_images\/CNW5759_e4c6f4ac-5072-44a6-abb0-fc2a88ae0b80.jpg",
+              "image": "shopify:\/\/shop_images\/43.jpg",
+              "image_thumb": "shopify:\/\/shop_images\/f6d728b17f961835f4c162b6230ac4c5.jpg",
               "link": "",
               "heading": "Tomato season",
               "subheading": "nutritious  delicious",
@@ -480,7 +480,7 @@
         "type": "offers-pack",
         "settings": {
           "pack": "xmas-box",
-          "heading": "<span>with our snack boxed",
+          "heading": "<span>with our snack boxes",
           "heading_overlap": "Spread the love",
           "product_lt": "dahongpao",
           "product_rt": "noob-chips",
@@ -555,34 +555,19 @@
           "autoplay": ""
         }
       },
-      "1483053216561": {
-        "type": "offers-product",
+      "1483214645452": {
+        "type": "offers-product-02",
         "settings": {
-          "product": "dahongpao",
-          "custom_image_enable": false,
-          "img_special_product": "",
-          "heading": "Special offer",
-          "subheading_overlap": "New"
-        }
-      },
-      "1483053308240": {
-        "type": "offers-products",
-        "settings": {
-          "image_bg": "shopify:\/\/shop_images\/CNW5759_e4c6f4ac-5072-44a6-abb0-fc2a88ae0b80.jpg",
-          "heading": "Green",
-          "subheading": "It’s for health",
-          "product_left": "",
-          "product_right": ""
+          "product": "xmas-box"
         }
       }
     },
     "content_for_index": [
       "offers-section_1",
       "offers-pack_1",
-      "1483053216561",
+      "1483214645452",
       "feature-collections_1",
-      "featured-carouse_1",
-      "1483053308240"
+      "featured-carouse_1"
     ]
   }
 }
