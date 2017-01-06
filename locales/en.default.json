@@ -39,8 +39,8 @@
     "general": {
       "heading": "Blog",
       "heading_for_recipes": "Recipes",
-      "subheading": "with love from the bottom of Foodly heart",
-      "by_author": "by"
+      "subheading": "with love from the bottom of Snackoo heart",
+      "by_author": ""
     },
     "article": {
       "older_post": "Older post",
@@ -84,14 +84,14 @@
   },
   "cart": {
     "general": {
-      "heading": "Your Food bag",
+      "heading": "Your snack bag",
       "product_title": "Product Title",
       "quantity": "QTY",
       "price": "Price",
       "remove": "x",
       "total": "Total",
       "total_information": "Price excludes delivery, which is applied at checkout. Orders will be processed in USD",
-      "note_heading": "Note to Foodly store",
+      "note_heading": "Note to Snackoo store",
       "note_placeholder": "Leave your special requirements here",
       "checkout_button": "Proceed to checkout",
       "additional_information_heading": "Choose package",
@@ -120,7 +120,7 @@
       "heading": "Product collections"
     },
     "product_list": {
-      "products_in_collection": "products in collection"
+      "products_in_collection": "products in collection "
     }
   },
   "products": {
@@ -207,7 +207,7 @@
       "last_name": "Last Name",
       "email": "Email Address",
       "password": "Password",
-      "password_info": "The password must be a minimum of 6 characters long. Only characters from A-Z, and 0-9 are allowed."
+      "password_info": "The password must be a minimum of 6 characters long. Only characters from a-z, and 0-9 are allowed."
     },
     "registration": {
       "heading": "Create acount",

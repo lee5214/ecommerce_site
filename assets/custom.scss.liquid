@@ -139,8 +139,33 @@ $index_slider_height: 92vh;
     }
     .slide--1{
       .slide__info-wrapper{
-        .slide__info-part {
-          background: gray;
+        bottom: 10%;
+        top: auto;
+        left: 30%;
+        .slide__info-part{
+          &:nth-child(1) {
+            .heading--page {
+              background: gray;
+              padding: 0 100px;
+            }
+          }
+          &:last-child {
+            .heading--page {
+              background: pink;
+              width: calc(100vw / 40);
+              text-transform: capitalize;
+              a{
+                width: 50%;
+                text-transform: capitalize;
+                font-weight: 600 !important;
+              }
+            }
+            .subheading--page{
+            }
+          }
+        }
+        .slide__price-point{
+          display: none;
         }
       }
     }
@@ -430,6 +455,47 @@ $index_slider_height: 92vh;
     .featured-collections__item {
       //padding-right: 0;
       padding: 5px;
+      &.item__1{
+        .img-holder {
+          &:before {
+            content: "brands";
+            top:-2px;
+            //padding: 2px 10px;
+
+          }
+          &:hover::before{
+            content: "so good";
+            font-size: 400%;
+          }
+        }
+
+      }
+
+      &.item__2{
+        .img-holder {
+          &:before {
+            content: "";
+          }
+          &:hover::before{
+            content: "healthy";
+            font-size: 40px;
+            top: 10px;
+          }
+        }
+
+      }
+
+      &.item__3{
+        .img-holder {
+          &:before {
+            content: "sale";
+          }
+          &:hover::before{
+            content: "cheap goodies";
+          }
+        }
+
+      }
 
       .img-holder {
         padding: 20px;
@@ -438,14 +504,25 @@ $index_slider_height: 92vh;
         transition: all 600ms;
         border-left: 20px solid white;
         border-right: 20px solid white;
-        &:hover{
-          border-left: 20px solid rgba(187, 114, 114, 0.4);
-          border-right: 20px solid rgba(187, 114, 114, 0.4);
-          transition: all 600ms;
-        }
         img {
           width: 100%;
           max-height: 100%;
+        }
+        &:hover img{
+          opacity: 0.1;
+        }
+        &:before{
+          width:100px;
+          height:100px;
+          background: #89e4ff;
+          transition: all 600ms;
+        }
+        &:hover::before{
+          //content: 'most famous';
+          //border-left: 60px solid rgba(187, 114, 114, 1);
+          background: #ff92c3;
+          //border-right: 200px solid rgba(187, 114, 114, 0.4);
+          transition: all 600ms;
         }
       }
     }
@@ -496,7 +573,7 @@ $index_slider_height: 92vh;
       width: 50%;
       display: block;
       position: relative;
-      height: calc(100vh - 175px);
+      height: calc(130vh - 175px);
       overflow: hidden;
       .slide {
         /*height: 70vh;
@@ -505,8 +582,9 @@ $index_slider_height: 92vh;
       }
       .flexslider{
         .flex-control-nav{
-          top: calc(100% - 140px);
-          margin-top: -105px;
+          bottom: 0;
+          top: auto;
+          margin-top: auto;
           margin-bottom: 0;
           padding-top: 0;
           width: 100%;
@@ -532,16 +610,27 @@ $index_slider_height: 92vh;
       &:after{
         height:0 !important;
       }
-      height:calc(100vh - 175px);
+      height:calc(130vh - 175px);
       float: right;
       display: block;
       width: 50%;
       overflow-y: scroll;
+      overflow-x: hidden;
       //height: 80vh;
       //overflow: scroll;
       .product-description-flex{
         width:90%;
+        margin-left:5%;
         //margin-left: auto;
+        .product {
+          text-align: left;
+          .product__desc {
+            .product__desc-content {
+              text-align: left;
+              padding: 20px;
+            }
+          }
+        }
       }
       .product__info {
         .product__expense {

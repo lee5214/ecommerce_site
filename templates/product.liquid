@@ -2,6 +2,7 @@
   <div class="parallax__back">
     {% include 'product-slideshow' %}
   </div>
+
   <div class="parallax__base">
     <div class="wrapper">
       <div class="grid">
@@ -9,8 +10,13 @@
           <meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
           <meta itemprop="image" content="{{ product.featured_image.src | product_img_url: 'grande' }}">
           <h1 itemprop="name" class="product__title {% if product.featured_image.size > 0 %}fade-up{% endif %}">{{ product.title }}</h1>
-          <div class="product__info {% if product.featured_image.size > 0 %}fade-up{% endif %}">
-            <span class="product__spec">
+<!--rating star-->
+          {% include 'rw-rating' %}
+            <div class="product__info {% if product.featured_image.size > 0 %}fade-up{% endif %}">
+<!--add brand link in product page-->
+            <a style="text-align:left; color:rgb(60, 125, 102);" href="{{shop.url}}/collections/{{product.vendor | handleize }}">{{product.vendor}}</a>
+<!--product__spec stock-->
+            <!--<span class="product__spec">
               {{ product.type }} |
           
               {% if product.first_available_variant.inventory_quantity > 0 %}
@@ -23,21 +29,22 @@
               {% else %}
                 {{ product.first_available_variant.weight_unit }}
               {% endif %}          
-            </span>
+            </span>-->
           
             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="product__expense">
               <meta itemprop="priceCurrency" content="{{ shop.currency }}">
               <link itemprop="availability" href="http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}">
     
               <span class="product__price"><span itemprop="price" class="money">{{ product.price | money }}</span></span>
-            
+
+<!-- per default zhongliang
               {% if product.variants.first.option1 != 'Default Title' %} 
                 {% capture weight_unit %}{{ product.variants.first.option1 }}{% endcapture %}
               {% else %}
                 {% capture weight_unit %}{{ product.variants.first.weight_unit }}{% endcapture %}
               {% endif %}
             
-              <p class="product__size-unit">
+               <p class="product__size-unit">
                 <em>
                   {{ 'products.general.per' | t }}
                   {% if weight_unit == "kg" %}
@@ -47,6 +54,7 @@
                   {% endif %}
                 </em>
               </p>
+-->
             </div>
             {% comment %}
             Add to cart button

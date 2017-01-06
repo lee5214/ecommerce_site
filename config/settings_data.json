@@ -37,7 +37,7 @@
     "product_recipe_blog_ingredients": "Ingredients",
     "product_recipe_blog_directions": "Directions",
     "product_similar_enable": true,
-    "product_similar_number": "8",
+    "product_similar_number": "40",
     "product_similar_type": "tags",
     "cart_special_sku": "0001",
     "social_facebook_link": "https:\/\/www.facebook.com\/snackoocom",
@@ -54,8 +54,8 @@
     "collection_list_product_number": "50",
     "collection_product_badge": "badge",
     "collection_add_cart_thumb": true,
-    "collection_for_sorting_enable": false,
-    "collection_for_sorting": "Collection, Any, test333",
+    "collection_for_sorting_enable": true,
+    "collection_for_sorting": "Collection, Any, Drink",
     "collection_sort_tags_enable": true,
     "collection_sort_tags": "Type, Any types, tea, Vegetables, Herbals, Condiments",
     "collection_sort_default_enable": true,
@@ -350,7 +350,7 @@
           "1477729734685"
         ],
         "settings": {
-          "color_bg": "#6f7579",
+          "color_bg": "#bcc0c2",
           "footer_img_enable": false,
           "img_footer_bg": "",
           "foter_above": "none",
@@ -371,12 +371,12 @@
               "image": "shopify:\/\/shop_images\/1_388af91f-e92f-4e0a-839f-dcd2a3e3fe57.jpg",
               "image_thumb": "shopify:\/\/shop_images\/2_2157ef98-17fc-4bfa-9b87-f53076389438.jpg",
               "link": "shopify:\/\/collections\/three-squirels",
-              "heading": "<strong>Mocha Cake<\/strong>",
-              "subheading": "flavor from Japan",
+              "heading": "<strong>Three Squirrels<\/strong>",
+              "subheading": "flavor from China",
               "price": "0.99",
               "price_desc": "a gift from us",
-              "heading_add": "add heading",
-              "subheading_add": "add subheading"
+              "heading_add": "Best Nuts From China",
+              "subheading_add": "for gift"
             }
           },
           "1482379005610": {
@@ -457,9 +457,9 @@
           "1477745429658": {
             "type": "offer_section",
             "settings": {
-              "img__special_offer_lg": "shopify:\/\/shop_images\/banner2.jpg",
-              "img__special_offer_xs": "shopify:\/\/shop_images\/banner2_a81cc801-a9a7-41ce-a4c2-67554b414275.jpg",
-              "heading": "New Year Party Gifts",
+              "img__special_offer_lg": "shopify:\/\/shop_images\/DSC_1987_2_c9ad652d-9d20-4ec8-acb2-51158609fb41.jpg",
+              "img__special_offer_xs": "shopify:\/\/shop_images\/DSC_1987_2.jpg",
+              "heading": "Valentine's Day Gift Guide",
               "subheading": "",
               "mark_enable": true,
               "color_mark": "#65aef2",
@@ -479,13 +479,13 @@
       "offers-pack_1": {
         "type": "offers-pack",
         "settings": {
-          "pack": "xmas-box",
+          "pack": "",
           "heading": "<span>with our snack boxes",
           "heading_overlap": "Spread the love",
-          "product_lt": "dahongpao",
-          "product_rt": "noob-chips",
-          "product_lb": "snackoo-house-mixed-box",
-          "product_rb": "snackoo-house-sweet-box"
+          "product_lt": "",
+          "product_rt": "",
+          "product_lb": "",
+          "product_rb": ""
         }
       },
       "1481843462346": {
@@ -525,13 +525,13 @@
           "1482361797784-0": {
             "type": "collection",
             "settings": {
-              "collection": "frontpage"
+              "collection": "popular-brands"
             }
           },
           "1482361797784-1": {
             "type": "collection",
             "settings": {
-              "collection": "test111"
+              "collection": "popular-brands"
             }
           },
           "1482361797784-2": {
@@ -558,7 +558,7 @@
       "1483214645452": {
         "type": "offers-product-02",
         "settings": {
-          "product": "xmas-box"
+          "product": "asahi-jimami-tofu-6-pcs"
         }
       }
     },
