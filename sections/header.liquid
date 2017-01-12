@@ -33,7 +33,7 @@
       <!-- Mobile logo -->
       {% if section.settings.logo_use_image and section.settings.mobile_logo_enable %}
         <a class="site-logo site-logo--mobile" href="/">
-          <img src="{{ section.settings.logo | img_url: 'small' | format: 'png' }}" alt="{{ shop.name }}">
+          <img src="{{ section.settings.logo | img_url: 'large' | format: 'png' }}" alt="{{ shop.name }}">
         </a>
       {% endif %}
       <!-- End Mobile logo -->

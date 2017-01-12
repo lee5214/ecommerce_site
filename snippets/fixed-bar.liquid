@@ -13,7 +13,7 @@ For setting go to Admin -> Theme -> Customize Theme -> Header
        {% endfor %}
      {% endif %}
 
-     {% if settings.fixed_bar_search_enable %}
+    <!-- {% if settings.fixed_bar_search_enable %}
        <li class="fixed-bar__list-item fixed-bar__list-item--search">
          <a class="fixed-bar__list-link fixed-bar__list-link--icon" href="/search" title="{{ layout.search.heading | t }}">
          <span class="icon">
@@ -25,6 +25,7 @@ For setting go to Admin -> Theme -> Customize Theme -> Header
          </a>
        </li>
      {% endif %}
+     -->
 
      {% if settings.fixed_bar_links != blank %}
        {% for link in linklists[settings.fixed_bar_links].links offset:2 limit:2 %}

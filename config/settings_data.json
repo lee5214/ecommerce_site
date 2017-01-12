@@ -42,16 +42,16 @@
     "cart_special_sku": "0001",
     "social_facebook_link": "https:\/\/www.facebook.com\/snackoocom",
     "social_twitter_link": "https:\/\/twitter.com\/snackoocom",
-    "social_pinterest_link": "https:\/\/www.pinterest.com\/snackoocom",
+    "social_pinterest_link": "https:\/\/www.pinterest.com\/snackoo",
     "social_instagram_link": "https:\/\/www.instagram.com\/snackoocom",
-    "social_youtube_link": "https:\/\/www.youtube.com\/user\/snackoocom",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCmYOSal7aStBc1kDsbdQO4A",
     "social_tumblr_link": "http:\/\/snackoocom.tumblr.com\/",
     "footer_instagram_user_id": "\/\/1735276109",
     "footer_instagram_access_token": "\/\/1735276109.1677ed0.f28e471db7bc47dfb72114959c536d00",
     "footer_instagram_client": "\/\/23b4207860ac400f98bd9759e1000a1e",
     "footer_instagram_account": "\/\/snackoocom",
-    "collection_grid_product_number": "50",
-    "collection_list_product_number": "50",
+    "collection_grid_product_number": "48",
+    "collection_list_product_number": "48",
     "collection_product_badge": "badge",
     "collection_add_cart_thumb": true,
     "collection_for_sorting_enable": true,
@@ -142,7 +142,7 @@
     "info_btn_cookie_unique": "01",
     "info_btn_pulse_enable": true,
     "info_btn_delay": "1000",
-    "shipping_calculator": "Disabled",
+    "shipping_calculator": "Enabled",
     "shipping_calculator_heading": "Get shipping estimates",
     "shipping_calculator_default_country": "United States",
     "shipping_calculator_submit_button_label": "Calculate shipping",
@@ -370,13 +370,13 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/1_388af91f-e92f-4e0a-839f-dcd2a3e3fe57.jpg",
               "image_thumb": "shopify:\/\/shop_images\/2_2157ef98-17fc-4bfa-9b87-f53076389438.jpg",
-              "link": "shopify:\/\/collections\/three-squirels",
-              "heading": "<strong>Three Squirrels<\/strong>",
-              "subheading": "flavor from China",
-              "price": "0.99",
-              "price_desc": "a gift from us",
-              "heading_add": "Best Nuts From China",
-              "subheading_add": "for gift"
+              "link": "shopify:\/\/collections\/popular",
+              "heading": "Three Squirrels <br>A healthy indulgence",
+              "subheading": "check it",
+              "price": "",
+              "price_desc": "",
+              "heading_add": "",
+              "subheading_add": ""
             }
           },
           "1482379005610": {
@@ -385,33 +385,33 @@
               "image": "shopify:\/\/shop_images\/royce4_3.jpg",
               "image_thumb": "shopify:\/\/shop_images\/square.jpg",
               "link": "",
-              "heading": "Tomato season",
-              "subheading": "nutritious  delicious",
-              "price": "$3.05",
-              "price_desc": "start point",
-              "heading_add": "Yes, <strong>Please<\/strong>!",
-              "subheading_add": "Mmmmm..."
+              "heading": "Royce' <br> The art of Japanese chocolate",
+              "subheading": "check it",
+              "price": "",
+              "price_desc": "",
+              "heading_add": "",
+              "subheading_add": ""
             }
           },
-          "1482518171854": {
+          "1484010903790": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/43.jpg",
-              "image_thumb": "shopify:\/\/shop_images\/f6d728b17f961835f4c162b6230ac4c5.jpg",
+              "image": "shopify:\/\/shop_images\/unnamed11_250528e6-d8a1-45cb-9d95-0c1e377721a6.jpg",
+              "image_thumb": "shopify:\/\/shop_images\/square_4596b441-e3a4-4b3f-90c9-165c9b33c501.jpg",
               "link": "",
-              "heading": "Tomato season",
-              "subheading": "nutritious  delicious",
-              "price": "$3.05",
-              "price_desc": "start point",
-              "heading_add": "Yes, <strong>Please<\/strong>!",
-              "subheading_add": "Mmmmm..."
+              "heading": "Ishiya<br>Japan's most popular souvenir",
+              "subheading": "check it",
+              "price": "",
+              "price_desc": "",
+              "heading_add": "",
+              "subheading_add": ""
             }
           }
         },
         "block_order": [
           "1477737960076",
           "1482379005610",
-          "1482518171854"
+          "1484010903790"
         ],
         "settings": {
           "slideshow_effect": "fade",
@@ -428,9 +428,9 @@
           "mobile_logo_enable": true,
           "header_store_description_left": "",
           "header_store_description_right": "",
-          "collection_link": "",
-          "main_menu_collection_enable": false,
-          "main_menu_collections": "test333",
+          "collection_link": "collections",
+          "main_menu_collection_enable": true,
+          "main_menu_collections": "Soldout",
           "fixed_bar_enable": true,
           "fixed_bar_search_enable": true,
           "fixed_bar_links": ""
@@ -442,8 +442,8 @@
           "1477745788845": {
             "type": "offer_section",
             "settings": {
-              "img__special_offer_lg": "shopify:\/\/shop_images\/banner1.jpg",
-              "img__special_offer_xs": "shopify:\/\/shop_images\/banner1_37ceb08f-3e18-44fd-a14b-ecee510284bd.jpg",
+              "img__special_offer_lg": "shopify:\/\/shop_images\/Ramen-Guide-Gear-Patrol-Lead-1440_1_066e1d68-d1e0-42bd-b4f7-d2093ece94fa.jpg",
+              "img__special_offer_xs": "shopify:\/\/shop_images\/Ramen-Guide-Gear-Patrol-Lead-1440_1.jpg",
               "heading": "Quality Meal At Home",
               "subheading": "",
               "mark_enable": true,
@@ -451,14 +451,14 @@
               "color_mark_text": "#fff5f5",
               "mark_title": "",
               "mark_price": "Enjoy",
-              "btn_url": "shopify:\/\/collections\/snack-box"
+              "btn_url": ""
             }
           },
           "1477745429658": {
             "type": "offer_section",
             "settings": {
               "img__special_offer_lg": "shopify:\/\/shop_images\/DSC_1987_2_c9ad652d-9d20-4ec8-acb2-51158609fb41.jpg",
-              "img__special_offer_xs": "shopify:\/\/shop_images\/DSC_1987_2.jpg",
+              "img__special_offer_xs": "shopify:\/\/shop_images\/DSC_1987_2_c9ad652d-9d20-4ec8-acb2-51158609fb41.jpg",
               "heading": "Valentine's Day Gift Guide",
               "subheading": "",
               "mark_enable": true,
@@ -525,19 +525,19 @@
           "1482361797784-0": {
             "type": "collection",
             "settings": {
-              "collection": "popular-brands"
+              "collection": "popular"
             }
           },
           "1482361797784-1": {
             "type": "collection",
             "settings": {
-              "collection": "popular-brands"
+              "collection": "healthy"
             }
           },
           "1482361797784-2": {
             "type": "collection",
             "settings": {
-              "collection": "test333"
+              "collection": "sale"
             }
           }
         },

@@ -17,7 +17,7 @@
           {% if block.settings.heading != blank %}
             <div class="slide__info-wrapper">
               <div class="slide__info-part">
-                <h1 class="heading--page slide__heading"><a class="slide__link" href="{{ block.settings.link }}" title="{{ block.settings.heading }}">{{ block.settings.heading | upcase }}</a></h1>
+                <h1 class="heading--page slide__heading"><a class="slide__link" href="{{ block.settings.link }}" title="{{ block.settings.heading }}">{{ block.settings.heading | initial }}</a></h1>
                 <h2 class="subheading--page slide__subheading"><a class="slide__link" href="{{ block.settings.link }}" title="{{ block.settings.subheading }}"><em>{{ block.settings.subheading }}</em></a></h2>
               </div>
               <div class="slide__price-point">
