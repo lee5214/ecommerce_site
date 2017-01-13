@@ -18,13 +18,18 @@ $index_slider_height: 92vh;
   }
 }
 .section__subtitle{
-  font-size: calc(100vw/50);
+  color: white;
+  font-size: 32px;
   display: block;
   text-align: center;
-  margin-bottom: 50px;
-  @media (max-width: 1080px){
-    font-size: calc(100vw/25);
+  width: 50%;
+  margin: 0 auto 30px;
+  background: #868181;
+  @media (max-width: 768px){
+    width: 100%;
   }
+
+
 }
 .price_bubble{
   width: calc(100vw/12);
@@ -91,10 +96,10 @@ $index_slider_height: 92vh;
     &.fixed{
       //transform: translate3d(0, -100px, 0);
       .search-container{
-        transform: translate3d(0, 70px, 0);
+        transform: translate3d(0, 100px, 0);
       }
       .drawer__btn-open{
-        transform: translate3d(0, 70px, 0);
+        transform: translate3d(0, 100px, 0);
       }
     }
 
@@ -294,7 +299,7 @@ $index_slider_height: 92vh;
   .special-offer-container{
     height: 40vh !important;
     overflow: hidden;
-  //background: #ffdec2;//url({{ 'img_contact_banner.jpg' | asset_url }});
+  //background: #ffdec2; //url({{ 'img_contact_banner.jpg' | asset_url }});
   //background-size: cover;
     .spesial-offer{
       float: left;
@@ -344,6 +349,7 @@ $index_slider_height: 92vh;
 }*/
 #shopify-section-offers-section_1{
   .special-offer-container{
+    margin-bottom: 50px;
     a{
       width: calc((100vw - 90px)/2);
       height:40vh;
@@ -461,14 +467,21 @@ $index_slider_height: 92vh;
 }
 #shopify-section-1483214645452{
   .section{
+    margin-bottom: 50px;
     .product{
       width: 80%;
       margin-left:10%;
       overflow: visible;
       .image-wrapper{
-        //width: 66.6%;
+        width: 66.6%;
+        @media (max-width: 769px){
+          width: 100%;
+        }
+        @media (max-width: 1200px) and (min-width: 769px){
+          width: 50%;
+        }
         .img-holder{
-          overflow: hidden;
+          //overflow: hidden;
           img{
             //max-width: 100%;
             max-height: 100%;
@@ -476,7 +489,13 @@ $index_slider_height: 92vh;
         }
       }
       .product__info{
-        //width: 33.3%;
+        width: 33.3%;
+        @media (max-width: 1200px){
+          width: 100%;
+        }
+        @media (max-width: 1200px) and (min-width: 769px){
+          width: 50%;
+        }
         .product__info-container{
           float: none;
           margin: auto;
@@ -605,6 +624,7 @@ $index_slider_height: 92vh;
 }*/
 
 #shopify-section-feature-collections_1{
+   .featured-collections{margin-bottom: 50px;}
     .wrapper{
     max-width:80%;
     .featured-collections__item {
@@ -616,7 +636,7 @@ $index_slider_height: 92vh;
           padding: 20px;
           overflow: hidden;
           background-color: black;
-          transition: all 600ms;
+          transition: all 600ms ease;
           border-left: 20px solid white;
           border-right: 20px solid white;
           max-width: 400px;
@@ -629,16 +649,18 @@ $index_slider_height: 92vh;
           }
 
           &:hover img {
+            transition: all 600ms ease;
             opacity: 0.5;
           }
           &:before {
+            transition: all 600ms ease;
             content: "";
             //padding: 2px 10px;
           }
           &:hover::before{
             color: white;
-            font-size: calc(400%);
-            font-weight: 600;
+            font-size: 50px;
+            font-weight: 500;
           }
         }
       }
@@ -811,26 +833,7 @@ $index_slider_height: 92vh;
 
 
 
-//mobile
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//for mobile only
 
 
 @media screen and (max-width: 768px) {
@@ -838,6 +841,15 @@ $index_slider_height: 92vh;
     display: none;
   }
   .header {
+    .drawer {
+      height: 60px;
+      background: white;
+      position: fixed;
+      .drawer__btn-open {
+        position: fixed;
+        transform: translate3d(0, 0px , 0) !important;
+      }
+    }
     .site-logo--mobile{
       margin-top: 0 !important;
       position: fixed;
@@ -855,20 +867,78 @@ $index_slider_height: 92vh;
 
     &.header--clear {
       height: 0 !important;
-      .drawer {
-        height: 60px;
-        background: white;
-        position: fixed;
-        .drawer__btn-open {
-          position: fixed;
-        }
-
-      }
       &.fixed{
         .drawer {
           .drawer__btn-open {
-            transform: translate3d(0, 0, 0) !important
-          ;
+          }
+        }
+      }
+    }
+  }
+  .template-product {
+    #container {
+      margin-top: 30px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1024px){
+  #shopify-section-offers-section_1{
+    .special-offer-container {
+      a {
+        width: 100vw;
+        margin-left: 0;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+//for pc only
+@media screen and (min-width: 769px) {
+  #shopify-section-header{
+    .drawer{
+      .drawer__wrapper{
+        .nav-list{
+          //products catalog title
+          & > .has-dropdown--tertiary > .nav-list__dropdown > .nav-list__item > .nav-list__link{
+            background: #a09c9c;
+            width: 80%;
+            display: block;
+            margin:0 auto;
+            color: white;
+            font-family: raleway,"Bitter",serif;
+          }
+          //products catalog subtitle
+          & > .has-dropdown>.nav-list__dropdown>.has-dropdown>.nav-list__dropdown .nav-list__link:hover{
+            color: #73656a;
+            font-weight: 600;
+            transition: all 200ms ease;
+          }
+          & >.has-dropdown.nav-list__item--mega>.nav-list__dropdown>.nav-list__item {
+            max-width: 250px;
+            float: left;
+            width: 25%;
+            .nav-lit__link{
+              padding-top: 0;
+            }
+          }
+          .has-dropdown--tertiary{
+            .nav-list__dropdown{
+              max-width: 1020px;
+              .nav-list__item{
+                width: 100%;
+                max-width:300px;
+                padding-right: 0;
+                .nav-list__link{
+                  text-align: center;
+                }
+                .nav-list__dropdown{ //level3 dropdown
+                  width: 100%;
+                }
+              }
+            }
           }
         }
       }

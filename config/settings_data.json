@@ -444,7 +444,7 @@
             "settings": {
               "img__special_offer_lg": "shopify:\/\/shop_images\/Ramen-Guide-Gear-Patrol-Lead-1440_1_066e1d68-d1e0-42bd-b4f7-d2093ece94fa.jpg",
               "img__special_offer_xs": "shopify:\/\/shop_images\/Ramen-Guide-Gear-Patrol-Lead-1440_1.jpg",
-              "heading": "Quality Meal At Home",
+              "heading": "Quality Meals At Home",
               "subheading": "",
               "mark_enable": true,
               "color_mark": "#4ee377",
@@ -459,7 +459,7 @@
             "settings": {
               "img__special_offer_lg": "shopify:\/\/shop_images\/DSC_1987_2_c9ad652d-9d20-4ec8-acb2-51158609fb41.jpg",
               "img__special_offer_xs": "shopify:\/\/shop_images\/DSC_1987_2_c9ad652d-9d20-4ec8-acb2-51158609fb41.jpg",
-              "heading": "Valentine's Day Gift Guide",
+              "heading": "Valentine's Gift Guide",
               "subheading": "",
               "mark_enable": true,
               "color_mark": "#65aef2",
@@ -558,7 +558,7 @@
       "1483214645452": {
         "type": "offers-product-02",
         "settings": {
-          "product": "asahi-jimami-tofu-6-pcs"
+          "product": "snackoo-mixed-box"
         }
       }
     },
