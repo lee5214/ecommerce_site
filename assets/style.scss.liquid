@@ -1049,7 +1049,7 @@ p {
 }
 
 em {
-  font-style: italic;
+  font-style: normal;
 }
 
 strong {
@@ -2286,8 +2286,8 @@ th, td {
   @include content-tl(0, 0, 100%, 140px, transparent);
   z-index: 1;
   background: -webkit-linear-gradient(top,        rgba($colorNeutral, 1) -20%, rgba($colorInverse, 0) 100%);
-  background:    -moz-linear-gradient(top,        rgba($colorNeutral, 1) -20%, rgba($colorInverse, 0) 100%);   
-  background:         linear-gradient(to bottom,  rgba($colorNeutral, 1) -20%, rgba($colorInverse, 0) 100%); 
+  background:    -moz-linear-gradient(top,        rgba($colorNeutral, 1) -20%, rgba($colorInverse, 0) 100%);
+  background:         linear-gradient(to bottom,  rgba($colorNeutral, 1) -20%, rgba($colorInverse, 0) 100%);
 }
 
 .header .search-container,
@@ -2452,7 +2452,7 @@ th, td {
   }
 
   .header--clear.fixed {
-    background-color: $colorNeutral;
+    background-color: white;
 
     &:before {
       @include transform(translateY(-223px));
@@ -4092,14 +4092,14 @@ th, td {
 /* Media styles */
 @media (min-width: 769px) { 
   .drawer--cart.close .drawer__wrapper {
-    @include transform(translate3d(-100%, 0, 0));
+    @include transform(translate3d(100%, 0, 0));
     display: none;
   }
 
   .drawer--cart .drawer__wrapper {
     width: 640px;
     top: 45px;
-    left: -30px;
+    //left: -30px;
 
     @include transition(none);
     opacity: 0;
@@ -5857,7 +5857,7 @@ th, td {
 
     .product__desc-content {
       margin: 0 auto;
-      max-width: 640px;
+      max-width: 640px;  //remove limitation
       padding-top: 8px;
       line-height: 30px;
     }
@@ -7391,7 +7391,7 @@ th, td {
     }
 
     .slide__subheading {
-      font-size: 20px;
+      //font-size: 20px;
     }
 
     .slide__subheading .slide__link {
@@ -12455,11 +12455,11 @@ th, td {
   }
   
   .product--boxed .product__block .product__block-item:first-child {
-    width: 60%;
+    width: 50%;
   }
 
   .product--boxed .product__block .product__block-item:last-child {
-    width: 40%;
+    width: 50%;
   }
   
   .product--boxed .product__content {
@@ -12570,6 +12570,9 @@ th, td {
   }
   
   .product--boxed .product__block .product__block-item:first-child {
+    width: 50%;
+  }
+  .product--boxed .product__block .product__block-item:last-child {
     width: 50%;
   }
   
@@ -14541,8 +14544,8 @@ th, td {
 .featured-collections__list .item__title {
   margin: 30px 0;
   font-family: $additionalBodyFontStack;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 600;
   line-height: 24px;
 }
 
