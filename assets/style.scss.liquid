@@ -2300,7 +2300,7 @@ th, td {
   .header {
     height: 223px; 
     position: relative;
-    background-color: $colorNeutral;
+    background-color: white; //header color
   }
 
   .header:before {
@@ -2361,13 +2361,13 @@ th, td {
       padding: 5px 10px;
       position: absolute;
       top: -2px;
-      right: -30px;
+      //right: -30px; //from -30px
     }
   }
   
   .header .search-container.open {
     .icon--search {
-      right: 0px;
+      //right: -30px;
     }
     .form--search-primary {
 
@@ -2442,10 +2442,10 @@ th, td {
     }
 
     .drawer__btn-open {
-      @include transform(translate3d(0, 80px, 0));//100px->80px
+      @include transform(translate3d(0, 95px, 0));//100px->95px
     }
     .search-container{
-      @include transform(translate3d(0, 80px, 0));//100px->80px
+      @include transform(translate3d(0, 95px, 0));//100px->95px
       opacity: 1;
       visibility: visible;
     }
@@ -11242,7 +11242,7 @@ th, td {
   .icon--search {
     position: absolute;
     top: 3px;
-    right: -30px;
+    right: 0px;
     cursor: pointer;
   
     .svg-icon path {
@@ -12491,7 +12491,7 @@ th, td {
     position: absolute;
     top: 50%;
     left: 50%;
-    @include transform(translate3d(-50%, -50%, 0));
+    //@include transform(translate3d(-50%, -50%, 0));
   }
   
   .carousel--product-gallery .img-holder {

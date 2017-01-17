@@ -24,7 +24,7 @@ $index_slider_height: 92vh;
   text-align: center;
   width: 50%;
   margin: 0 auto 60px;
-  background: rgb(240, 96, 96);
+  background: #a2a2a2;
   @media (max-width: 768px){
     width: 100%;
   }
@@ -94,6 +94,7 @@ $index_slider_height: 92vh;
 
     &:after{
     opacity:0;}
+    /*
     .search-container{
       form{
         input{
@@ -101,6 +102,8 @@ $index_slider_height: 92vh;
         }
       }
     }
+    */
+    /*
     &.fixed{
       //transform: translate3d(0, -100px, 0);
       .search-container{
@@ -115,11 +118,7 @@ $index_slider_height: 92vh;
         transform: translate3d(0, 95px, 0);
       }
     }
-
-    .search-container {
-      left: auto;
-      right: 200px;
-    }
+    */
 
     //background-color: $header_color;
     //height: 0;
@@ -424,9 +423,12 @@ $index_slider_height: 92vh;
             margin-right: -30px;
           }
         }
-        h3{
+        .heading--page{
           color: white;
           font-weight: 600;
+          top:0;
+          width:100%;
+          position: absolute;
         }
       }
     }
@@ -796,20 +798,63 @@ $index_slider_height: 92vh;
 .collection__toolbar-views{
   display: none;
 }
-.product{
-  @media (min-width: 769px){
-  .product__block {
-    width: 80%;
-    margin-left: 10%;
-    .product__title, .product__spec{
-      text-align: center;
-    }
-    .form-wrapper{
-      .form{
-        text-align: center;
+.template-product{
+  .similar-product{
+    .swiper-button-prev {
+      opacity: 1;
+      pointer-events: all;
+      z-index: 100;
+      position: absolute;
+      top: 25%;
+      background: #ff6a6a;
+      //height: 25px;
+      //margin-left: -4px;
+      &:before{
+        display: none;
+      }
+      svg{
+        width: 18px;
+        fill: white;
       }
     }
+    .swiper-button-next {
+      opacity: 1;
+      pointer-events: auto;
+      right: 0;
+      position: absolute;
+      top: 25%;
+      background: #ff6a6a;
+      //height: 25px;
+      //margin-right: -20px;
+      left: auto;
+      &:before{
+        display: none;
+      }
+      svg{
+        width: 18px;
+        fill: white;
+      }
+    }
+    .swiper-wrapper {
+      //width: 80%;
+      margin: 0 auto;
+    }
   }
+}
+.product{
+  @media (min-width: 769px){
+    .product__block {
+      width: 80%;
+      margin-left: 10%;
+      .product__title, .product__spec{
+        text-align: center;
+      }
+      .form-wrapper{
+        .form{
+          text-align: center;
+        }
+      }
+    }
   }
 }
 //left right side - product des
@@ -961,32 +1006,72 @@ $index_slider_height: 92vh;
   }
 }
 
+#cart{
+    .drawer__wrapper{
+      //top: 0;
+      .cart{
+        form {
+          height: 80vh;
+          overflow: scroll;
+        }
+      }
+    }
+  }
 //for pc only
+
+//products catalog title
+#shopify-section-header > header > div.drawer.drawer--menu.close > div > ul > li:nth-child(2) > ul > li > a{
+  background: #a09c9c;
+  width: 80%;
+  display: block;
+  margin:0 auto;
+  color: white;
+  font-family: raleway,"Bitter",serif;
+  &:hover{
+    background: white;
+    color: #73656a;
+    font-weight: 600;
+    transition: all 200ms ease;
+    .nav-list__title{
+      color: white;
+    }
+  }
+}
 @media (min-width: 769px) {
   #shopify-section-header{
     .drawer{
       .drawer__wrapper{
         .nav-list{
-          //products catalog title
-          & > .has-dropdown--tertiary > .nav-list__dropdown > .nav-list__item > .nav-list__link{
+          //products catalog subtitle (min secs)
+          & > .has-dropdown>.nav-list__dropdown>.has-dropdown>.nav-list__dropdown .nav-list__link:hover{
+            color: #73656a;
+            font-weight: 600;
+            transition: all 200ms ease;
+          }
+          /*li:nth-child(2) > ul > li > a{
             background: #a09c9c;
             width: 80%;
             display: block;
             margin:0 auto;
             color: white;
             font-family: raleway,"Bitter",serif;
-          }
-          //products catalog subtitle
-          & > .has-dropdown>.nav-list__dropdown>.has-dropdown>.nav-list__dropdown .nav-list__link:hover{
-            color: #73656a;
-            font-weight: 600;
-            transition: all 200ms ease;
-          }
+            &:hover{
+              background: white;
+              color: #73656a;
+              font-weight: 600;
+              transition: all 200ms ease;
+              .nav-list__title{
+                color: white;
+              }
+            }
+          }*/
+
           //collection img
           & > .has-dropdown.nav-list__item--mega>.nav-list__dropdown>.nav-list__item {
             max-width: 250px;
             float: left;
             width: 25%;
+            padding: 0;
             .nav-list__link{
               padding: 7px 30px;
               .img-holder{
@@ -1001,7 +1086,11 @@ $index_slider_height: 92vh;
           }
           .has-dropdown--tertiary{
             .nav-list__dropdown{
-              max-width: 1020px;
+              //width: auto;
+              
+              //min-width: 800px;
+              width: 1020px;
+              max-width: 1020px; //need
               .nav-list__item{
                 width: 100%;
                 max-width:300px;
@@ -1019,11 +1108,64 @@ $index_slider_height: 92vh;
       }
     }
   }
-  #cart{
-    .drawer__wrapper{
-      top: 0;
-      height: 100vh;
-      overflow: scroll;
+}
+
+//search bar
+.header .search-container {
+  left: auto;
+  right: 160px;
+  @media (min-width: 767px) and (max-width: 1023px){
+  	//display: none;
+  }
+}
+.header .search-container.open {
+    .form--search-primary {
+      .form__field {
+        @media(max-width: 1023px) {
+          	width: 50px;
+        }
+        @media (min-width: 1024px) and (max-width: 1300px) {
+        	width: 100px;
+        }
+        @media(min-width: 1300px) and (max-width: 1599px) {
+        	width: 200px;
+        }
+        @media(min-width: 1600px) {
+        	width: 300px;
+        }
+      }
     }
+  
+}
+
+//weixin
+#shopify-section-footer > footer > div > div > div.grid__item.large--one-quarter.medium--one-half.one-whole.footer__item.footer__item--social > ul > .weixin{
+  .weixin__img {
+    width: 0;
+    height: 0;
+    top: 10px;
+    /* position: absolute; */
+    position: relative;
+    img {
+      visibility: hidden;
+      float: left;
+    }
+  }
+  &:hover .weixin__img>img{
+    visibility: visible;
+    float: left;
+
+  }
+  &:active .weixin__img>img{
+    visibility: visible;
+    float: left;
+  }
+  &:focus .weixin__img>img{
+    visibility: visible;
+    float: left;
+  }
+  &:visited .weixin__img>img{
+    visibility: visible;
+    float: left;
   }
 }

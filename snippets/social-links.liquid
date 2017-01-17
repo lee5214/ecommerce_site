@@ -54,4 +54,14 @@
     </li>
   {% endif %}
 
+    <li class="social-icons__item weixin">
+        <a class="social-icons__link" title="{{ shop.name }} on Weixin" target="_blank">
+            <i class="fa fa-weixin"></i>
+            <span class="fallback-text">Weixin</span>
+        </a>
+        <div class="weixin__img">
+            <img src="{{ 'weixin__barcode.png' | asset_img_url: '100x'}}" />
+        </div>
+    </li>
+
 </ul>

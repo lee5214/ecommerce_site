@@ -29,22 +29,22 @@ Snippet is used to show products in 'collection.liquid', 'similar-product-carous
     
     <span class="product__spec">
       {{ product.type | link_to_type }}
-    
-      {% if product.available %}
-        &nbsp;|&nbsp;
-        {{ 'products.general.in_stock' | t }}
-      {% else %}
-        &nbsp;|&nbsp;
-        {{ 'products.general.out_stock' | t }}
-      {% endif %}
-    
-      {% if product.first_available_variant.option1 != 'Default Title' %}
-        &nbsp;|&nbsp;
-        {{ product.first_available_variant.option1 }}
-      {% else %}
-        &nbsp;|&nbsp;
-        {{ product.first_available_variant.weight_unit }}
-      {% endif %}            
+
+		{% if product.available %}
+          &nbsp;|&nbsp;
+			{{ 'products.general.in_stock' | t }}
+		{% else %}
+          &nbsp;|&nbsp;
+			{{ 'products.general.out_stock' | t }}
+		{% endif %}
+
+		{% if product.first_available_variant.option1 != 'Default Title' %}
+          &nbsp;|&nbsp;
+			{{ product.first_available_variant.option1 }}
+		{% else %}
+          &nbsp;|&nbsp;
+			{{ product.first_available_variant.weight_unit }}
+		{% endif %}
     </span>
   </div> <!-- End product__info -->
 </div> <!-- End product -->

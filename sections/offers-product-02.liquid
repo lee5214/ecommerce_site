@@ -25,13 +25,15 @@
             {{ 'products.general.in_stock' | t }}
           {% else %}
             {{ 'products.general.out_stock' | t }}
-          {% endif %} | 
+          {% endif %}
 
+{% comment %}
           {% if special_product.first_available_variant.option1 != 'Default Title' %}
             {{ special_product.first_available_variant.option1 }}
           {% else %}
             {{ special_product.first_available_variant.weight_unit }}
-          {% endif %}        
+          {% endif %}
+{% endcomment %}
         </span>
 
         <div class="product__expense">
@@ -42,7 +44,7 @@
           {% else %}
             {% capture weight_unit %}{{ special_product.variants.first.weight_unit }}{% endcapture %}
           {% endif %}
-
+{% comment %}
           <p class="product__size-unit">
             <em>
               {{ 'products.general.per' | t }}
@@ -52,7 +54,8 @@
                 {{ weight_unit | downcase }}
               {% endif %}
             </em>
-          </p> 
+          </p>
+{% endcomment %}
         </div>
 
         <div class="form-wrapper">

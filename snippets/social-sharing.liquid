@@ -41,7 +41,12 @@ Snippet for social media buttons
 
   {% endif %}
 
-
+  {% if settings.product_share_btns_twitter or settings.article_share_btns_twitter or settings.password_page_share_twitter %}
+    <a class="social-sharing__item" href="http://service.weibo.com/share/share.php?url={{ permalinkURL }}&amp;title={{ shareTitle }}&amp;pic=http:{% if template contains 'product' %}{{ product | img_url: '1024x1024' }}{% else %}{{ article | img_url: '1024x1024' }}{% endif %}" target="_blank" >
+      <i class="fa fa-weibo"></i>
+      <span class="fallback-text">Weibo</span>
+    </a>
+  {% endif %}
 
   {% comment %}
   //remove g+ and fancy
