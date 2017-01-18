@@ -64,26 +64,30 @@
                 </div>
               </div>
             </div>
-          
+
             <div class="product__block-item">
               <div class="product__content">
-                <h1 itemprop="name" class="product__title">{{ product.title }}</h1>
-                <div class="product__info">
-                  <span class="product__spec">
-                    {{ product.type | link_to_type }} |
-                  
-                    {% if product.first_available_variant.inventory_quantity > 0 %}
-                      {{ 'products.general.in_stock' | t }}
-                    {% else %}
-                      {{ 'products.general.out_stock' | t }}
-                    {% endif %} 
-                    
-                    {% comment%}
-                   
-                    {{ product.first_available_variant.weight_unit }}
-                    
-                    {% endcomment%}
+                <span class="product__spec">
+                  {% include 'breadcrumbs' %}
+{% comment %}
+                    //created breadcrumbs.liquid
+                    {{ product.type | link_to_type }}
+					{% if product.first_available_variant.inventory_quantity > 0 %}
+						{{ 'products.general.in_stock' | t }}
+					{% else %}
+						{{ 'products.general.out_stock' | t }}
+					{% endif %}
+
+					{{ product.first_available_variant.weight_unit }}
+
+{% endcomment%}
                   </span>
+                <h1 itemprop="name" class="product__title">{{ product.title }}</h1>
+				<div id="product__rw-rating">
+					{% include 'rw-rating' %}
+                </div>
+                <div class="product__info">
+
                   <div class="product__desc">
                     {% assign content_html = product.description %}
                     {% include 'strip_html_tags' with content_html %}

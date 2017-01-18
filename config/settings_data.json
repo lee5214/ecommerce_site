@@ -57,7 +57,7 @@
     "collection_for_sorting_enable": true,
     "collection_for_sorting": "All Collections, Popular Products, Healthy Options, Sale, Bundles",
     "collection_sort_tags_enable": true,
-    "collection_sort_tags": "Tags, $1-$5, $5-$10, $10-$15, $15-$20, $20+",
+    "collection_sort_tags": "Price Ranges, All Prices, $1-$5, $5-$10, $10-$15, $15-$20, $20+",
     "collection_sort_default_enable": true,
     "article_share_btns_anable": true,
     "article_share_btns_heading": "Share",
@@ -364,8 +364,8 @@
           "instagram_subheading": "let’s have a look what is behind the scenes",
           "subscribe_heading": "Get notified",
           "subscribe_subheading": "joining newsletter from Snackoo to get the latest news and offers",
-          "copyright_link": "http:\/\/lee5214.com",
-          "copyright_link_text": "CL"
+          "copyright_link": "",
+          "copyright_link_text": ""
         }
       },
       "slideshow": {
@@ -376,9 +376,9 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/1_388af91f-e92f-4e0a-839f-dcd2a3e3fe57.jpg",
               "image_thumb": "shopify:\/\/shop_images\/2_2157ef98-17fc-4bfa-9b87-f53076389438.jpg",
-              "link": "shopify:\/\/collections\/popular",
+              "link": "",
               "heading": "Three Squirrels <br>A healthy indulgence",
-              "subheading": "check it",
+              "subheading": "Shop now",
               "price": "",
               "price_desc": "",
               "heading_add": "",
@@ -392,7 +392,7 @@
               "image_thumb": "shopify:\/\/shop_images\/square.jpg",
               "link": "",
               "heading": "Royce' <br> The art of Japanese chocolate",
-              "subheading": "check it",
+              "subheading": "Shop now",
               "price": "",
               "price_desc": "",
               "heading_add": "",
@@ -406,7 +406,7 @@
               "image_thumb": "shopify:\/\/shop_images\/square_4596b441-e3a4-4b3f-90c9-165c9b33c501.jpg",
               "link": "",
               "heading": "Ishiya<br>Japan's most popular souvenir",
-              "subheading": "check it",
+              "subheading": "Shop now",
               "price": "",
               "price_desc": "",
               "heading_add": "",
@@ -436,7 +436,7 @@
           "header_store_description_right": "",
           "collection_link": "collections",
           "main_menu_collection_enable": true,
-          "main_menu_collections": "Popular-Products,Healthy-Options,Sale,bundles",
+          "main_menu_collections": "Popular-Products,Healthy-Options,Sale,Bundles",
           "fixed_bar_enable": true,
           "fixed_bar_search_enable": true,
           "fixed_bar_links": "collections"
@@ -472,7 +472,7 @@
               "color_mark_text": "#ffffff",
               "mark_title": "with each other",
               "mark_price": "Together",
-              "btn_url": "shopify:\/\/collections\/valentine"
+              "btn_url": ""
             }
           }
         },
@@ -531,7 +531,7 @@
           "1482361797784-0": {
             "type": "collection",
             "settings": {
-              "collection": "popular"
+              "collection": ""
             }
           },
           "1482361797784-1": {
