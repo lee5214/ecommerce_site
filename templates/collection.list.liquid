@@ -61,7 +61,7 @@
                 <h4 class="product__title"><a href="{{ product.url }}" title="{{ product.title }}" itemprop="name">{{ product.title }}</a></h4>
                 <span class="product__spec">
                   {{ product.type | link_to_type }}
-                
+
                   <span itemprop="availability">{% if product.available %}
                     &nbsp;|&nbsp;
                     {{ 'products.general.in_stock' | t }}

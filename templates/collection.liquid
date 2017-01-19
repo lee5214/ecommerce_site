@@ -76,8 +76,8 @@
 
 
                   <div class="product__info">
-                    <h4 class="product__title"><a href="{{ product.url }}" title="{{ product.title }}">{{ product.title | truncatewords: 4 }}</a></h4>
-
+                    <h4 class="product__title"><a href="{{ product.url }}" title="{{ product.title }}">{{ product.title | truncatewords: 8 }}</a></h4>
+{% comment %}
                     <span class="product__spec">
                       {{ product.type | link_to_type }}
 
@@ -95,8 +95,9 @@
                       {% else %}
                         &nbsp;|&nbsp;
                         {{ product.first_available_variant.weight_unit }}
-                      {% endif %}            
+                      {% endif %}
                     </span>
+{% endcomment %}
                   </div> <!-- End product__info -->
                 </div> <!-- End product -->
                 
