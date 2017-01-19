@@ -436,7 +436,7 @@
           "header_store_description_right": "",
           "collection_link": "collections",
           "main_menu_collection_enable": true,
-          "main_menu_collections": "Popular-Products,Healthy-Options,Sale,Bundles",
+          "main_menu_collections": "Snackoo-Box,Popular-Products,Healthy-Options,Sale",
           "fixed_bar_enable": true,
           "fixed_bar_search_enable": true,
           "fixed_bar_links": "collections"
@@ -531,7 +531,7 @@
           "1482361797784-0": {
             "type": "collection",
             "settings": {
-              "collection": ""
+              "collection": "popular-products"
             }
           },
           "1482361797784-1": {

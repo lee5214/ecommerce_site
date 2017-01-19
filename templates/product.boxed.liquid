@@ -83,11 +83,23 @@
 {% endcomment%}
                   </span>
                 <h1 itemprop="name" class="product__title">{{ product.title }}</h1>
-				<div id="product__rw-rating">
-					{% include 'rw-rating' %}
-                </div>
+                {% if settings.product_share_btns_anable %}
+                    <div class="{% if product.featured_image.size > 0 %}fade-up delay-one{% endif %}">
+                      <span>{{ settings.product_share_btns_heading }}</span>
+						{% comment %}
+                      Snippet for social media buttons
+                      For setting go to Admin -> Theme -> Customize Theme -> Product page
+						{% endcomment %}
+                      <div class="social-sharing social-sharing--product">
+						  {% include 'social-sharing'%}
+                      </div>
+                    </div>
+				  {% endif %}
+{% comment %}
+rating star
+{%  endcomment %}
+                <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
                 <div class="product__info">
-
                   <div class="product__desc">
                     {% assign content_html = product.description %}
                     {% include 'strip_html_tags' with content_html %}
@@ -188,22 +200,7 @@
         </div> <!-- End grid__item -->
       </div> <!-- End grid -->
     </div> <!-- End wrapper -->
-  </div>  
-
-    
-    
-    {% if settings.product_share_btns_anable %}
-      <div class="{% if product.featured_image.size > 0 %}fade-up delay-one{% endif %}">
-        <span>{{ settings.product_share_btns_heading }}</span>
-        {% comment %}
-        Snippet for social media buttons
-        For setting go to Admin -> Theme -> Customize Theme -> Product page
-        {% endcomment %}
-        <div class="social-sharing social-sharing--product">
-          {% include 'social-sharing'%}
-        </div>
-      </div>
-    {% endif %}
+  </div>
 
     
     <div class="wrapper">
@@ -301,9 +298,38 @@
         </div> <!-- End grid__item -->
       </div> <!-- End grid -->
     </div> <!-- End wrapper -->
-    
+
     <hr class="hr--clear-inverse hr--desktop">
-    
+
+    {% if settings.product_similar_enable %}
+      <div class="wrapper">
+        <div class="grid">
+          <div class="grid__item">
+            <div class="fold similar-product {% if product.featured_image.size > 0 %}fade-up delay-four{% endif %}">
+              <h3 class="heading heading--add fold__toggle">{{ 'products.product_page.similar_products_title' | t }}</h3>
+
+              <div class="fold__content">
+                  {% if settings.product_similar_type == "tags" %}
+                      {% comment %}
+                    Snippet for similar products which are chosen by similar tags
+                    For setting go to Admin -> Theme -> Customize Theme -> Product page
+                      {% endcomment %}
+                      {% include 'similar-product-carousel-tag' %}
+                      {% elsif settings.product_similar_type == "collection" %}
+                      {% comment %}
+                    Snippet for similar products which are chosen by similar collection
+                    For setting go to Admin -> Theme -> Customize Theme -> Product page
+                      {% endcomment %}
+                      {% include 'similar-product-carousel-collection' %}
+                  {% endif %}
+              </div> <!-- End fold__content -->
+            </div> <!-- End fold -->
+          </div> <!-- End grid__item -->
+        </div> <!-- End grid -->
+      </div> <!-- End wraper -->
+    {% endif %}
+
+    <hr class="hr--clear-inverse hr--desktop">
     
     {% comment %}
     Add product review widget, must install Product Review App:
@@ -456,36 +482,9 @@
         </div> <!-- End grid -->
       </div> <!-- End wrapper -->
     {% endif %}
+
     
-    <hr class="hr--clear-inverse hr--desktop">
-    
-    {% if settings.product_similar_enable %}
-      <div class="wrapper">
-        <div class="grid">
-          <div class="grid__item">
-            <div class="fold similar-product {% if product.featured_image.size > 0 %}fade-up delay-four{% endif %}">
-              <h3 class="heading heading--add fold__toggle">{{ 'products.product_page.similar_products_title' | t }}</h3>
-            
-              <div class="fold__content">
-                {% if settings.product_similar_type == "tags" %}
-                  {% comment %}
-                  Snippet for similar products which are chosen by similar tags
-                  For setting go to Admin -> Theme -> Customize Theme -> Product page
-                  {% endcomment %}
-                  {% include 'similar-product-carousel-tag' %}
-                {% elsif settings.product_similar_type == "collection" %}
-                  {% comment %}
-                  Snippet for similar products which are chosen by similar collection
-                  For setting go to Admin -> Theme -> Customize Theme -> Product page
-                  {% endcomment %}
-                  {% include 'similar-product-carousel-collection' %}
-                {% endif %}
-              </div> <!-- End fold__content -->
-            </div> <!-- End fold -->
-          </div> <!-- End grid__item -->
-        </div> <!-- End grid -->
-      </div> <!-- End wraper -->
-    {% endif %}
+
 
 
 

@@ -183,7 +183,7 @@
   </div><!-- end wrapper-->              
 
   <p class="copyright">
-  &copy; {{ 'now' | date: "%Y" }}, {{ shop.name }}. {{ 'layout.copyright.right_reserved' | t }} 
+  &copy; {{ 'now' | date: "%Y" }}, Snackoo Inc. All rights reserved. {% comment %}{{ shop.name }}. {{ 'layout.copyright.right_reserved' | t }} {% endcomment %}
     {% if section.settings.copyright_link != blank %}
       <a class="text-link--default" href="{{ section.settings.copyright_link }}" target="_blank" title="{{ section.settings.copyright_link_text }}">{{ section.settings.copyright_link_text }}</a>
     {% endif %}

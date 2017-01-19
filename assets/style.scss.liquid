@@ -5785,7 +5785,7 @@ th, td {
     padding-top: 0;
 
     .text-link--default {
-      margin-top: 20px;
+      margin-top: 0;
     }
 
     .icon--plus {
@@ -6463,7 +6463,7 @@ th, td {
       display: block;
 
       .text-link--default {
-        margin-left: 20px;
+        margin-left: 0;
       }
 
       p {
@@ -9877,7 +9877,7 @@ th, td {
   .social-disable .large--one-quarter.footer__item--contact,
   .social-disable .large--one-quarter.footer__item--blog,
   .social-disable .large--one-quarter.footer__item--menu {
-    width: 33%;
+    width: 50%;
   }
 
   .social-disable .large--one-third.footer__item--contact,
@@ -11586,15 +11586,15 @@ th, td {
     }
 
     .social-sharing__item {
-      margin-left: 16px;
+      //margin-left: 16px;
     }
   }
 
   .social-sharing--product {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px 0;
-    background-color: $colorNeutral;
+    padding: 0 0;
+    //background-color: $colorNeutral;
 
     .social-sharing__item {
       background-color: $colorInverse;
@@ -12492,7 +12492,7 @@ th, td {
     position: absolute;
     top: 50%;
     left: 50%;
-    //@include transform(translate3d(-50%, -50%, 0));
+    @include transform(translate3d(-50%, -50%, 0));
   }
   
   .carousel--product-gallery .img-holder {
@@ -12561,9 +12561,9 @@ th, td {
     display: block;
     width: auto;
     position: relative;
-    top: 0;
+    top: 50%;
     left: 50%;
-    @include transform(translateX(-50%));
+    @include transform(translate3d(-50%,-50%,0));
   }  
   
   .carousel--product-gallery .carousel__navigation .swiper-pagination-bullet {
@@ -14273,7 +14273,7 @@ th, td {
    ========================================================================== */
 @media (min-width: 769px) {
   .product--boxed {
-    padding-top: 55px;
+    padding-top: 0;
   }
 }
 

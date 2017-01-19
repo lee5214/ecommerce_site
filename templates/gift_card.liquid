@@ -150,15 +150,14 @@ Information how to activate gift cards:
 
   <footer class="footer">
     <p class="copyright">
-      &copy; {{ 'now' | date: "%Y" }}, {{ shop.name }}. {{ 'layout.copyright.right_reserved' | t }} 
-      {% if settings.copyright_link != blank %}
-        <a class="text-link--default" href="{{ settings.copyright_link }}" target="_blank" title="{{ settings.copyright_link_text }}">{{ settings.copyright_link_text }}</a>
+      &copy; {{ 'now' | date: "%Y" }}, Snackoo Inc. All rights reserved. {% comment %}{{ shop.name }}. {{ 'layout.copyright.right_reserved' | t }} {% endcomment %}
+		{% if settings.copyright_link != blank %}
       {% endif %}
     </p>
   
     {% if settings.logo_use_image %}
       <a class="logo" href="{{ shop.url }}">
-        <img src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}">
+        <img src="{{ 'snackoo_logo_simple.png' | asset_url }}" alt="{{ shop.name }}">
       </a>
     {% else %}
       <a class="text-logo" href="{{ shop.url }}">{{ shop.name }}</a>
