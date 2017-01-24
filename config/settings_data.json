@@ -89,7 +89,7 @@
     "contact_block1_lng": "-96.689",
     "contact_block1_zoom": "16",
     "contact_block2_enable": true,
-    "contact_block2": "Foodly Inc<br>\r\nSuite 109<br>\r\n273 – 3000 High Way<br>\r\nWhistler, BC, V0N 2B5<br>\r\nCanada",
+    "contact_block2": "test",
     "contact_block2_lat": "50.087",
     "contact_block2_lng": "-122.986",
     "contact_block2_zoom": "16",
@@ -135,9 +135,9 @@
     "gift_card_email": "gift@snackoo.com",
     "info_btn_enable": true,
     "info_btn_heading": "Don’t miss a chance",
-    "info_btn_news": "<div class=\"coupon-code\">20fp20fp<\/div> use the code above to get 20% discount for first purchase at Foodly store",
+    "info_btn_news": "<div class=\"coupon-code\">20fp20fp<\/div> use the code above to get 20% discount for first purchase at Snackoo store",
     "info_btn_text_link": "Create your Account",
-    "info_btn_url_link": "http:\/\/foodly-store.myshopify.com\/account\/register",
+    "info_btn_url_link": "http:\/\/snackoo.com\/account\/register",
     "info_btn_cookie_enable": true,
     "info_btn_cookie_unique": "01",
     "info_btn_pulse_enable": true,
@@ -176,7 +176,7 @@
     "checkout_use_body_background_image": false,
     "checkout_use_sidebar_background_image": false,
     "footer_subscribe_heading": "Get notified",
-    "footer_subscribe_subheading": "joining newsletter from Foodly to get the latest news and offers",
+    "footer_subscribe_subheading": "joining newsletter from Snackoo to get the latest news and offers",
     "hero_image_enable": false,
     "hero_image_title": "Real Food Projects",
     "hero_image_desc": "Featuring 30 Skills and 47 Recipes from Scratch, this book will change the way you cook.",
@@ -192,7 +192,7 @@
     "pick_products_subheading": "pick direction you’d like to go further and recieve the list of product options",
     "homepage_subscribe_form_enable": true,
     "homepage_subscribe_form_heading_html": "Business<br> Values<br> Attitude",
-    "homepage_subscribe_form_subheading": "Join folks at Foodly family to get the latest news and the best offers",
+    "homepage_subscribe_form_subheading": "Join folks at Snackoo family to get the latest news and the best offers",
     "homepage_subscribe_block_subheading_overlap": "Family",
     "homepage_special_1_enable": true,
     "homepage_special_1_heading": "Start your day",
@@ -224,7 +224,7 @@
     "homepage_recipes_enable": true,
     "homepage_recipes_blog": "recipes-8",
     "homepage_recipes_heading": "Picked recipes",
-    "homepage_recipes_subheading": "with love from the bottom of Foodly heart",
+    "homepage_recipes_subheading": "with love from the bottom of Snackoo heart",
     "homepage_recipes_subheading_overlap": "Hand",
     "color_footer_bg": "#f5f4f4",
     "footer_img_enable": false,
@@ -277,11 +277,11 @@
     "footer_menu_heading": "More info",
     "footer_quicklinks_linklist": "footer",
     "footer_second_menu_enable": true,
-    "footer_second_menu_heading": "Foodly family",
+    "footer_second_menu_heading": "Snackoo family",
     "footer_second_menu": "footer-additional",
     "footer_address_enable": false,
     "footer_address_heading": "Contact info",
-    "footer_address_text": "<ul>\r\n<li><i class=\"fa fa-envelope\"><\/i><a href=\"mailto:contact@foodly.com\">contact@foodly.com<\/a>\r\n<\/li>\r\n<li><i class=\"fa fa-mobile\"><\/i>\r\n912-823-5448\r\n<\/li>\r\n<li><i class=\"fa fa-map-marker\"><\/i>\r\n\r\nFoodly Inc Suite\r\n109 273 – 3000 High Way\r\nWhistler, BC, V0N 2B5 \r\n<\/li>\r\n<\/ul>",
+    "footer_address_text": "<ul>\r\n<li><i class=\"fa fa-envelope\"><\/i><a href=\"mailto:contact@snackoo.com\">contact@snackoo.com<\/a>\r\n<\/li>\r\n<li><i class=\"fa fa-mobile\"><\/i>\r\n912-823-5448\r\n<\/li>\r\n<li><i class=\"fa fa-map-marker\"><\/i>\r\n\r\nSnackoo Inc Suite\r\n109 273 – 3000 High Way\r\nWhistler, BC, V0N 2B5 \r\n<\/li>\r\n<\/ul>",
     "footer_show_methods_of_payment": true,
     "footer_social_enable": true,
     "footer_social_heading": "Follow Us",
@@ -518,13 +518,7 @@
         ],
         "settings": {}
       },
-      "featured-carouse_1": {
-        "type": "featured-carousel",
-        "settings": {
-          "featured_collection": "newest-products",
-          "autoplay": "1000"
-        }
-      },
+
       "feature-collections_1": {
         "type": "feature-collections",
         "blocks": {
@@ -554,11 +548,26 @@
         ],
         "settings": {}
       },
+      "featured-carouse_1": {
+        "type": "featured-carousel",
+        "settings": {
+          "featured_collection": "newest-products",
+          "autoplay": "1000"
+        }
+      },
+      "featured-carouse_2": {
+        "type": "featured-carousel_2",
+        "settings": {
+          "featured_collection": "all",
+          "autoplay": "1000"
+        }
+      },
       "1482910037530": {
         "type": "featured-carousel",
         "settings": {
+          "title": "aaaa",
           "featured_collection": "",
-          "autoplay": ""
+          "autoplay": "400"
         }
       },
       "1483214645452": {
@@ -574,6 +583,7 @@
       "1483214645452",
       "feature-collections_1",
       "featured-carouse_1"
+    //, "featured-carouse_2"
     ]
   }
 }

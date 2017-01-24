@@ -55,12 +55,7 @@ Template for customer account
           
             {% endif %}
           </div> <!-- End orders -->
-        
-          {% if paginate.pages > 1 %}
-            <div class="pagination">
-              {% include 'pagination' %}
-            </div>
-          {% endif %}
+
         {% endpaginate %}
         
         <aside class="customer-sidebar">
@@ -114,6 +109,11 @@ Template for customer account
           {% endif %}
       
         </aside>
+        {% if paginate.pages > 1 %}
+          <div class="pagination">
+              {% include 'pagination' %}
+          </div>
+        {% endif %}
       </div> <!-- End grid__item -->
     </div> <!-- End grid -->
   </div> <!-- End wrapper -->
