@@ -24,9 +24,9 @@
     "product_share_btns_heading": "",
     "product_share_btns_facebook": true,
     "product_share_btns_twitter": true,
-    "product_share_btns_pinterest": false,
+    "product_share_btns_pinterest": true,
     "product_share_btns_google_p": false,
-    "product_share_btns_fancy": true,
+    "product_share_btns_fancy": false,
     "product_description_enable": true,
     "product_nutritional_enable": false,
     "product_nutritional_energy": "Nutritional value",
@@ -37,7 +37,7 @@
     "product_recipe_blog_ingredients": "Ingredients",
     "product_recipe_blog_directions": "Directions",
     "product_similar_enable": true,
-    "product_similar_number": "40",
+    "product_similar_number": "8",
     "product_similar_type": "tags",
     "cart_special_sku": "0001",
     "social_facebook_link": "https:\/\/www.facebook.com\/snackoocom",
@@ -436,7 +436,7 @@
           "header_store_description_right": "",
           "collection_link": "collections",
           "main_menu_collection_enable": true,
-          "main_menu_collections": "Snackoo-Box,Popular-Products,Healthy-Options,Sale",
+          "main_menu_collections": "snackoo-box,Popular-Products,Healthy-Options,Sale",
           "fixed_bar_enable": true,
           "fixed_bar_search_enable": true,
           "fixed_bar_links": "collections"
@@ -472,7 +472,7 @@
               "color_mark_text": "#ffffff",
               "mark_title": "with each other",
               "mark_price": "Together",
-              "btn_url": ""
+              "btn_url": "shopify:\/\/collections\/valentines-day-gift-guide"
             }
           }
         },
@@ -518,7 +518,6 @@
         ],
         "settings": {}
       },
-
       "feature-collections_1": {
         "type": "feature-collections",
         "blocks": {
@@ -558,14 +557,13 @@
       "featured-carouse_2": {
         "type": "featured-carousel_2",
         "settings": {
-          "featured_collection": "all",
+          "featured_collection_2": "",
           "autoplay": "1000"
         }
       },
       "1482910037530": {
         "type": "featured-carousel",
         "settings": {
-          "title": "aaaa",
           "featured_collection": "",
           "autoplay": "400"
         }
@@ -583,7 +581,6 @@
       "1483214645452",
       "feature-collections_1",
       "featured-carouse_1"
-    //, "featured-carouse_2"
     ]
   }
 }

@@ -550,7 +550,7 @@ $index_slider_height: 92vh;
     height: 360px;
   }
   svg{
-    margin-top: 168px;
+    margin-top: 0;
     fill: #767676;
     width: 24px;
     display: block;
@@ -770,8 +770,9 @@ $index_slider_height: 92vh;
 
 //product
 //$product_num_in_row= 6;
-
-
+#container > .wrapper > .grid > .grid__item > .product__block > .product__block-item > .swiper-container > .swiper-wrapper > div.swiper-slide{
+  width: 100% !important;
+}
 #products{
   .section--page {
     .wrapper {
