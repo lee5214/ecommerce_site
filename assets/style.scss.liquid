@@ -12551,7 +12551,7 @@ th, td {
 }
 
 
-@media (min-width: 1401px) {
+@media (min-width: 1001px) {
   .product--boxed .wrapper {
     padding: 0;
     max-width: 100%;
@@ -15639,3 +15639,276 @@ th, td {
   }
 }
 
+
+//popup ver1.5
+/* Popup
+/* -------------------------------------------------------------------------- */
+.popup {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  opacity: 0;
+
+  -webkit-transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+
+  &:before {
+    @include content-tl(0, 0, 100%, 100%, $colorPrimary);
+    @include transition(opacity 300ms ease-in-out);
+    opacity: 0;
+  }
+
+  .popup-content {
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    left: 0;
+    max-width: 800px;
+    min-height: 600px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+    background-color: $colorInverse;
+    @include transform(translateY(-50%));
+
+    opacity: 0;
+    visibility: hidden;
+
+    -webkit-transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+  }
+
+  .popup-heading {
+    font-family: $bodyFontStack;
+  }
+
+  .popup-discount-offer {
+    font-family: $bodyFontStack;
+    font-size: 136px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 110px;
+  }
+}
+
+.popup-discount--image {
+
+  .popup-content {
+    padding-top: 160px;
+    padding-left: 15px;
+    padding-bottom: 120px;
+    background-image: url({{ settings.popup_bg | img_url: 'x600', scale: 2  }});
+    //background-image: url({{'img-popup-bg1.png' | img_url: 'x600', scale: 2}});//asset_img_url: '400x' }});
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+  }
+
+  .popup-content:before {
+    @include content-tl(140px, 0, 100%, 100%, $colorInverse);
+    z-index: -1;
+  }
+
+  .popup-heading {
+    margin-top: 5px;
+    margin-bottom: 6px;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 36px;
+  }
+
+  .popup-discount-code {
+    margin-top: 40px;
+    margin-left: 10px;
+    padding: 5px 15px;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 0.4em;
+    color: $colorHighlight;
+    text-transform: uppercase;
+    border: 1px solid $colorHighlight;
+  }
+
+  .popup-discount-info {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 24px;
+    color: $colorAdditionalSecond;
+  }
+
+  .popup-discount-offer {
+    text-align: center;
+    margin-left: -15px;
+    color: $colorHighlight;
+  }
+
+  .popup-link-container {
+    margin-left: 10px;
+    margin-top: 20px;
+
+    .close-btn {
+      padding: 15px 0 1px 0;
+      position: relative;
+      display: inline-block;
+      color: $colorAdditionalSecond;
+      border-bottom: 2px solid $colorAdditionalSecond;
+    }
+  }
+
+  .popup-link {
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-align: right;
+
+    @include transition(color 300ms ease-in-out);
+
+    span {
+      margin-right: 10px;
+      float: left;
+    }
+
+    svg path {
+      fill: $colorPrimary;
+      @include transition(fill 300ms ease-in-out);
+    }
+
+    &:hover {
+      color: $colorHighlight;
+
+      svg path {
+        fill: $colorHighlight;
+      }
+    }
+  }
+
+  .close-btn {
+    display: none;
+  }
+}
+
+
+.popup-discount--image.is-open {
+  visibility: visible;
+  opacity: 1;
+
+  &:before {
+    opacity: .6;
+  }
+
+  .popup-content {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .popup-discount--image .popup-content {
+    padding-left: 15%;
+  }
+
+  .popup-discount--image .popup-discount-offer {
+    margin-left: -15%;
+  }
+}
+
+@media (min-width: 769px) {
+  .popup-discount--image {
+    .popup-content {
+      padding-left: 303px;
+    }
+
+    .popup-content:before {
+      display: none;
+    }
+
+    .popup-discount-offer {
+      text-align: left;
+      margin-left: 0;
+    }
+
+    .popup-link-container {
+      margin-left: 0;
+      margin-top: 20px;
+      width: 400px;
+      height: 396px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      background-image: url({{'img_popup-link-container-bg.png' | asset_img_url: '400x' }});
+      .close-btn {
+        display: none;
+      }
+    }
+
+    .popup-link {
+      position: absolute;
+      bottom: 23px;
+      right: 30px;
+      color: $colorInverse;
+
+      span {
+        margin-right: 0;
+        display: block;
+        float: none;
+      }
+
+      svg path {
+        fill: $colorInverse;
+      }
+    }
+
+    .popup-link:hover {
+      color: $colorPrimary;
+
+      svg path {
+        fill: $colorPrimary;
+      }
+    }
+
+    .close-btn {
+      display: block;
+      padding: 15px;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      span {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+@media (max-height: 740px) {
+  .popup-discount--image .popup-content {
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-bottom: 50px;
+    //min-height: auto;
+    background-image: none;
+  }
+}
+
+@media (max-height: 520px) {
+  .popup-discount--image .popup-content {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    //min-height: auto;
+    background-image: none;
+  }
+
+  .popup-discount--image .popup-discount-offer {
+    font-size: 116px;
+    line-height: 80px;
+  }
+}

@@ -34,11 +34,11 @@ var global = (function(){
         writable: true
       },
       authorTitle: {
-        value: options.authorTitle || 'Hi, I’m Olia',
+        value: options.authorTitle || 'Hi, I’m Owen',
         writable: true
       },
       authorInfo: {
-        value: options.authorInfo || 'author from Congruity Hub',
+        value: options.authorInfo || 'dev from Snackoo',
         writable: true
       },
       delayShow: {
@@ -46,7 +46,7 @@ var global = (function(){
         writable: true
       },
       newsTitle: {
-        value: options.newsTitle || 'Fresh news from Congruity Hub ;)',
+        value: options.newsTitle || 'Fresh news from Snackoo ;)',
         writable: true
       },
       newsText: {

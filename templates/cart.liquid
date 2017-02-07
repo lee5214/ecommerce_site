@@ -86,14 +86,14 @@
       <a class="text-link--default cart-continue-shop__link" href="/collections" title="{{ 'cart.cart_page.continue_shopping' | t }}">
         <span class="icon icon--arrow-left"></span>
         {{ 'cart.cart_page.continue_shopping' | t }}
-        <span class="text-clear">{{ 'cart.cart_page.within' | t }}</span>
+        <span class="text-clear">with Snackoo collections</span>  {% comment %} {{ 'cart.cart_page.within' | t }}</span> {% endcomment %}
         </a>
     </div>
 
     <!-- Shop logo -->
     {% if settings.logo_use_image %}
       <a class="site-logo" href="/">
-        <img src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}">
+        <img src="{{ 'snackoo_logo.png' | asset_url }}" alt="{{ shop.name }}">
       </a>
     {% else %}
       <a href="/">{{ shop.name }}</a>
@@ -243,7 +243,7 @@
   {% comment %}
   Snippet for footer
   {% endcomment %}
-  {% include 'footer' %}
+  {% section 'footer' %}
 
   <script>
     window.addEventListener('load', function loadFontAwesome() {
@@ -270,8 +270,8 @@
       }
       return script;
   }
-  {% if settings.foter_above == 'instagram' %}
-    
+  {% if settings.footer_above == 'instagram' %}
+
     window.addEventListener('load', function(){    
     // ---------------------------------------------------------
     // Instagram feed

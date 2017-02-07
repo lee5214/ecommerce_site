@@ -8,6 +8,62 @@
     "theme_documentation_url": "http:\/\/snackoo.com\/documentation\/"
   },
   {
+    "name": "Popup",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "popup_enable",
+        "label": "Show popup",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "popup_bg",
+        "label": "Background image"
+      },
+      {
+        "type": "text",
+        "id": "popup_heading",
+        "label": "Popup heading",
+        "default": "A Spring Preview Surprise"
+      },
+      {
+        "type": "text",
+        "id": "popup_discount_offer",
+        "label": "Discount offer",
+        "default": "40% off"
+      },
+      {
+        "type": "text",
+        "id": "popup_discount_code",
+        "label": "Discount code",
+        "default": "foodlysurprise"
+      },
+      {
+        "type": "text",
+        "id": "popup_discount_info",
+        "label": "Discount info",
+        "default": "use the code above for spring<br>collection purchase"
+      },
+      {
+        "type": "url",
+        "id": "popup_link",
+        "label": "Link to recource"
+      },
+      {
+        "type": "text",
+        "id": "popup_link_text",
+        "label": "Link text"
+      },
+      {
+        "type": "text",
+        "id": "popup_days",
+        "label": "How much days don't show popup?",
+        "default": "30"
+      }
+    ]
+  },
+  {
     "name": "Colors",
     "settings": [
       {

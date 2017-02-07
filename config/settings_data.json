@@ -1,5 +1,14 @@
 {
   "current": {
+    "popup_enable": true,
+    "popup_bg": "shopify:\/\/shop_images\/popup-bg_x600_2x_62ea4de5-bb49-4c57-a647-b71b65c9cc4e.jpg",
+    "popup_heading": "A New Year\/Spring Surprise",
+    "popup_discount_offer": "25% off",
+    "popup_discount_code": "SnackooGift",
+    "popup_discount_info": "use the code above for spring<br>collection purchase",
+    "popup_link": "shopify:\/\/collections\/bundles",
+    "popup_link_text": "check it now!",
+    "popup_days": "1",
     "bg_image_choice": "",
     "bg_image_display": "bg_image_title",
     "color_body_bg": "#ffffff",

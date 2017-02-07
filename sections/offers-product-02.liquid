@@ -8,7 +8,7 @@
     <div class="image-wrapper {% unless special_product.available %}product--sold-out{% endunless %}">
       <div class="img-holder img-holder--product {% unless special_product.featured_image.size > 0 %}img-holder--no-product{% endunless %}">
         <a href="{{ special_product.url }}">
-          <img src="{% if special_product.featured_image.size > 0 %}{{ special_product.featured_image | img_url: '2048x2048'}}{% else %}{{ 'img_no_image.jpg' | asset_url }}{% endif %}" alt="{{ special_product.title }}">
+          <img src="{% if special_product.featured_image.size > 0 %}{{ special_product.featured_image | img_url: '1000x1000'}}{% else %}{{ 'img_no_image.jpg' | asset_url }}{% endif %}" alt="{{ special_product.title }}">
         </a>
       </div>
     </div>

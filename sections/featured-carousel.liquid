@@ -17,7 +17,7 @@ For settings go to Admin -> Theme -> Customize Theme -> Home page
 <div class="swiper-container carousel carousel--homepage" style="width:80%; float:left;">
   <div class="swiper-wrapper">
     {% for product in collections[section.settings.featured_collection].products %}
-      <div class="swiper-slide" data-img-bg="{% if product.featured_image.size > 0 %}{{ product.featured_image | img_url: 'grande'}}{% else %}{{ 'img_no_image.jpg' | asset_url }}{% endif %}">
+      <div class="swiper-slide" data-img-bg="{% if product.featured_image.size > 0 %}{{ product.featured_image | img_url: 'large'}}{% else %}{{ 'img_no_image.jpg' | asset_url }}{% endif %}">
         {% include 'product-item-grid' %}
       </div>
     {% endfor %}
@@ -25,7 +25,6 @@ For settings go to Admin -> Theme -> Customize Theme -> Home page
   </div>
 
 </div>
-
 <div class="carousel__navigation" style="width: 10%;float: right;">
   <!-- Add Arrows -->
   <button class="homepage-swiper-btn-next carousel-button-next">
@@ -36,7 +35,6 @@ For settings go to Admin -> Theme -> Customize Theme -> Home page
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-
     // Initialize SwiperinitHomepageCarousel
     function initHomepageCarousel() {
       var activeSlideContainer = document.querySelector('.swiper-active-slide');
@@ -50,7 +48,7 @@ For settings go to Admin -> Theme -> Customize Theme -> Home page
         slidesPerGroup: 6,
         slidesPerView: 6,
         loop: false,
-        autoplay: "{{ settings.homepage_featured_auplay }}",
+        autoplay: 4000,  //in ms  "{{ settings.homepage_featured_autoplay }}",
         onInit: function(carouselHomepage) {
           var slideNumber = carouselHomepage.slides.length;
           var bdImage, slideLink;
@@ -69,7 +67,7 @@ For settings go to Admin -> Theme -> Customize Theme -> Home page
         preloadImages: false,
         lazyLoading: true,
         breakpoints: {
-          2048:{
+          2048:{ //or less than
               slidesPerView: 5,
               slidesPerGroup: 5
           },
