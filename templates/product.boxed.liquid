@@ -71,6 +71,9 @@
                 <span class="product__spec">
                   {% include 'breadcrumbs' %}
 {% comment %}
+                  {% include 'uncomplicated.categories.catbread' %}
+{% endcomment %}
+{% comment %}
                     //created breadcrumbs.liquid
                     {{ product.type | link_to_type }}
 					{% if product.first_available_variant.inventory_quantity > 0 %}
@@ -128,12 +131,11 @@ rating star
                   Add to cart button
                   {% endcomment %}
                   <div class="form-wrapper">
-                    <form class="form form--default" action="/cart/add" method="post">
-
+                    <form class="form form--default" action="/cart/add" method="post" data-productid="{{product.id}}">
+                      {% if product.available %}{% include 'subscription-product' %}{% endif %}
                       <div class="form__row">
                         {% if product.variants.size > 1 and product.available %}
-
-                          <select id="product-variants" name="id">
+                          <select id="product-variants" name="id" data-productid="{{product.id}}">
                             {% for variant in product.variants %}
                               <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}" data-variant-price={{ variant.price }}>{{ variant.title }}</option>
                             {% endfor %}
@@ -141,7 +143,7 @@ rating star
 
                         {% else %}
 
-                          <input type="hidden" name="id" value="{{ product.variants[0].id }}" />              
+                          <input type="hidden" name="id" value="{{ product.variants[0].id }}" data-productid="{{product.id}}"/>
                         {% endif %}
                      </div>
                       <div class="form__row">
@@ -322,7 +324,7 @@ rating star
                         <div class="rte product-recipe__content right">
                           {{ directions_part }}
                         </div>
-                                
+
                         {% comment %}
                         Show the first matched article
                         {% endcomment %}

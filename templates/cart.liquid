@@ -399,5 +399,7 @@
   {{ 'scrollbar.min.js' | asset_url | script_tag }}
   {{ 'foodly.js' | asset_url | script_tag }}
   <script>Shopify.money_format = "{{ shop.money_format }}";</script>
+
+  {% include 'subscription-cart-footer' %} <br>
 </body>
 </html>

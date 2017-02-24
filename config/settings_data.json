@@ -6,9 +6,9 @@
     "popup_discount_offer": "25% off",
     "popup_discount_code": "SnackooGift",
     "popup_discount_info": "use the code above for spring<br>collection purchase",
-    "popup_link": "shopify:\/\/collections\/bundles",
+    "popup_link": "shopify:\/\/collections\/best-selling-products",
     "popup_link_text": "check it now!",
-    "popup_days": "1",
+    "popup_days": "2",
     "bg_image_choice": "",
     "bg_image_display": "bg_image_title",
     "color_body_bg": "#ffffff",
@@ -385,7 +385,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/1_388af91f-e92f-4e0a-839f-dcd2a3e3fe57.jpg",
               "image_thumb": "shopify:\/\/shop_images\/2_2157ef98-17fc-4bfa-9b87-f53076389438.jpg",
-              "link": "",
+              "link": "shopify:\/\/collections\/slidecollection_threesquirrels",
               "heading": "Three Squirrels <br>A healthy indulgence",
               "subheading": "Shop now",
               "price": "",
@@ -399,7 +399,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/royce4_3.jpg",
               "image_thumb": "shopify:\/\/shop_images\/square.jpg",
-              "link": "",
+              "link": "shopify:\/\/collections\/slidecollection_roycechocoloate",
               "heading": "Royce' <br> The art of Japanese chocolate",
               "subheading": "Shop now",
               "price": "",
@@ -413,7 +413,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/unnamed11_250528e6-d8a1-45cb-9d95-0c1e377721a6.jpg",
               "image_thumb": "shopify:\/\/shop_images\/square_4596b441-e3a4-4b3f-90c9-165c9b33c501.jpg",
-              "link": "",
+              "link": "shopify:\/\/collections\/slidecollection_ishiya",
               "heading": "Ishiya<br>Japan's most popular souvenir",
               "subheading": "Shop now",
               "price": "",
@@ -560,13 +560,12 @@
         "type": "featured-carousel",
         "settings": {
           "featured_collection": "newest-products",
-          "autoplay": "1000"
+          "autoplay": "1"
         }
       },
       "featured-carouse_2": {
-        "type": "featured-carousel_2",
+        "type": "featured-carousel",
         "settings": {
-          "featured_collection_2": "",
           "autoplay": "1000"
         }
       },

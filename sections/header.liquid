@@ -156,7 +156,11 @@
                             <li class="nav-list__item nav-list__item--add">
                               <a class="nav-list__link" href="{{ collection_menu.url }}">
                                 <div class="img-holder img-holder--block nav-list__image">
+                                  <div style="height: 100px;width: 100px; margin: 0 auto;"></div>
+{% comment %}
+nav collection img holder replaced by svg bg
                                   <img src="{{ collection_menu.image.src | img_url: 'small' }}" alt="">
+{% endcomment %}
                                 </div>
                                 <h3 class="nav-list__title">{{ collection_menu.title }}</h3>
                                 <p class="nav-list__desc">{{ collection_menu.description | truncatewords: 25 }}</p>

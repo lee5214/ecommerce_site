@@ -61,6 +61,12 @@ Template for customer account
         <aside class="customer-sidebar">
         
           <h4 class="customer__name">{{ customer.name }}</h4>
+          <!--recharge-->
+			{% if customer.metafields.subscriptions.customer_string %}
+              <!--BeginRechargeCode-->
+              <p><a href="/tools/recurring/customer/{{customer.metafields.subscriptions.customer_string}}/subscriptions/">Manage Subscriptions</a></p>
+              <!--EndRechargeCode-->
+			{% endif %}
           <div class="customer__logout-link">{{ 'customer.login.logout' | t | customer_logout_link }}</div>
         
           {% if customer.default_address != nil %}

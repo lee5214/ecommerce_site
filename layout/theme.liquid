@@ -51,12 +51,12 @@
 
   <!-- CSS ================================================== -->
   {% include 'styleheets' %}
+
   <!-- Header hook for plugins ================================================== -->
   {{ content_for_header }}
 
   <!-- IE support ================================================== -->
   {% include 'oldIE-js' %}
-
 
   <!-- Favicons ================================================== -->
   {% unless settings.favicon_enable %}
@@ -79,9 +79,7 @@
   {% include 'buddha-megamenu-before' %}
 </head>
 
-
 <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" style="overflow-y: scroll">
-
 {% assign current_page_title = page_title | handle %}
   <div class="content-wrapper">
     <div style="display:none">
@@ -142,8 +140,10 @@
 
   {% include 'rw-js' %}
   <!--review star-->
-  {% include 'popup-discount-image' %}
+  {% if template == 'index' %}
+    {% include 'popup-discount-image' %}
+  {% endif %}
   <!--popup snippets-->
-
+  {% include 'subscription-theme-footer' %}<br>
 </body>
 </html>
