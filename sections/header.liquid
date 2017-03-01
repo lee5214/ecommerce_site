@@ -68,7 +68,7 @@
             <!-- Shop logo -->
             {% if section.settings.logo_use_image %}
               <a class="site-logo" href="/">
-                <img src="{{ section.settings.logo | img_url: 'medium' | format: 'png' }}" alt="{{ shop.name }}">
+                <img src="{{ section.settings.logo | img_url: 'large' | format: 'png' }}" alt="{{ shop.name }}">
               </a>
             {% else %}
               <a class="site-logo-name" href="/">{{ shop.name }}</a>
@@ -105,24 +105,7 @@
             Assign the variable for marking active link
             - https://ecommerce.shopify.com/c/ecommerce-design/t/current-page-menu-highlighting-help-26714
             {% endcomment %}
-              {% assign active = false %}
-                {% if template == 'index' and link.url == '/' %}
-                  {% assign active = true %}
-                {% elsif collection.url == link.url %}
-                  {% assign active = true %}
-                {% elsif blog.url == link.url %}
-                  {% assign active = true %}
-                {% elsif page.url == link.url %}
-                  {% assign active = true %}
-                {% elsif page_title == link.title %}
-                  {% assign active = true %}
-                {% elsif template == 'list-collections' and link.url == '/collections' %}
-                  {% assign active = true %}
-                {% elsif page_title == 'Products' and link.url == '/collections/all' %}
-                  {% assign active = true %}
-                {% elsif template == 'article' and link.url == article.url %}
-                  {% assign active = true %}
-              {% endif %}
+            scroll
 
               {% assign child_list_handle = link.title | handle %}
 

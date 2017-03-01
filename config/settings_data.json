@@ -331,18 +331,18 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "1482211901292": {
+            "type": "help",
+            "settings": {
+              "title": "Help",
+              "help_text": "<ul><li><i class='fa fa-envelope'><\/i><a href='mailto:help@snackoo.com'>help@snackoo.com<\/a><\/li><li><i class='fa fa-phone'><\/i><a href='https:\/\/snackooinc.myshopify.com\/pages\/contact'>Contact Us<\/a><\/li><li><i class='fa fa-search'><\/i><a href='https:\/\/snackooinc.myshopify.com\/search'>Search<\/a><\/li><\/ul>"
+            }
+          },
           "1477729345875": {
             "type": "menu",
             "settings": {
-              "title": "More Info",
-              "linklist": "footer"
-            }
-          },
-          "1482211901292": {
-            "type": "address",
-            "settings": {
-              "title": "Contact info",
-              "address_text": "<ul><li><i class='fa fa-envelope'><\/i><a href='mailto:contact@snackoo.com'>contact@snackoo.com<\/a><\/li><li><i class='fa fa-mobile'><\/i>415-xxx-xxxx<\/li><li><i class='fa fa-map-marker'><\/i>Snackoo Suit 5 <br>3541 investment blvd<br>Hayward CA 94545 <\/li><\/ul>"
+              "title": "Company",
+              "linklist": "footer_link"
             }
           },
           "1477739219825": {
@@ -356,13 +356,20 @@
             "settings": {
               "title": "Payment methods"
             }
+          },
+          "1111": {
+            "type": "subscription",
+            "settings": {
+              "title": "Get the offers",
+              "sub_title": ""
+            }
           }
         },
         "block_order": [
-          "1477729345875",
           "1482211901292",
+          "1477729345875",
           "1477739219825",
-          "1477729734685"
+          "1111"
         ],
         "settings": {
           "color_bg": "#efefef",
@@ -371,10 +378,10 @@
           "foter_above": "none",
           "instagram_heading": "Instagram",
           "instagram_subheading": "let’s have a look what is behind the scenes",
-          "subscribe_heading": "Get notified",
-          "subscribe_subheading": "joining newsletter from Snackoo to get the latest news and offers",
-          "copyright_link": "",
-          "copyright_link_text": ""
+          "subscribe_heading": "Get the offers",
+          "subscribe_subheading": "sign up for the latest news and offers",
+          "copyright_link": "http:\/\/lee5214.com",
+          "copyright_link_text": "CL"
         }
       },
       "slideshow": {
@@ -491,18 +498,6 @@
         ],
         "settings": {}
       },
-      "offers-pack_1": {
-        "type": "offers-pack",
-        "settings": {
-          "pack": "",
-          "heading": "<span>with our snack boxes",
-          "heading_overlap": "Spread the love",
-          "product_lt": "",
-          "product_rt": "",
-          "product_lb": "",
-          "product_rb": ""
-        }
-      },
       "1481843462346": {
         "type": "offers-section",
         "blocks": {
@@ -566,6 +561,7 @@
       "featured-carouse_2": {
         "type": "featured-carousel",
         "settings": {
+          "featured_collection": "",
           "autoplay": "1000"
         }
       },
@@ -579,13 +575,12 @@
       "1483214645452": {
         "type": "offers-product-02",
         "settings": {
-          "product": "chinese-new-year-box"
+          "product": "valentine-box"
         }
       }
     },
     "content_for_index": [
       "offers-section_1",
-      "offers-pack_1",
       "1483214645452",
       "feature-collections_1",
       "featured-carouse_1"

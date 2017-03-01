@@ -1833,7 +1833,7 @@
         "type": "text",
         "id": "subscribe_form_url",
         "label": "MailChimp form action URL",
-        "default": "\/\/designzway.us10.list-manage.com\/subscribe\/post?u=579323687b7e07d00f80f3245&amp;id=a8c0b445bb",
+        "default": "\/\/snackoo.us15.list-manage.com\/subscribe\/post?u=90c43bfaf8f658c7a4e8ca170&amp;id=92bacf1a96",
         "info": "[How to get MailChimp action URL](http:\/\/atech.designzway.com\/documentation\/#HowtoworkwithMailChimpSubscribeForms?)"
       },
       {

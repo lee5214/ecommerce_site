@@ -406,7 +406,7 @@ body{
         }
         &:hover {
           transition: all 0.5s ease-in-out;
-          min-height: 60vh !important;
+          min-height: 48vh !important;
           //width: 120%;
           //background-size: 200%;
           //height: 60vh !important;
@@ -691,7 +691,7 @@ body{
           img {
             opacity: 0.9;
             width: auto;
-            max-height: 140%;
+            max-height: 110%;
             max-width:150%;
 
           }
@@ -1309,3 +1309,38 @@ body{
   }
 }
 //popup
+//footer_subscription
+@media (min-width: 481px) {
+  #mc-embedded-subscribe {
+    font-size: 14px;
+    font-weight: 600;
+    width: 120px;
+    position: absolute;
+    top: 50px;
+    right: -50px;
+    color: #5c4b51;
+    background-color: transparent;
+
+    &:hover {
+      color: #f06060;
+    }
+  }
+  #mce-EMAIL{
+    height: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  #shopify-section-footer > footer > div.wrapper > div > div.grid__item.large--one-quarter.medium--one-half.one-whole.footer__item.footer__item--contact.subscribe-form.subscribe-form--footer{
+    width: 100%;
+  }
+}
+
+#shopify-section-footer > footer > p > a{
+  color: rgba(0, 251, 158, 0.24);
+}
+
+//product list
+.template-collection > div > main > section > div > div.grid > div > div{
+  min-height: 400px;
+}

@@ -68,6 +68,35 @@
       
       {% for block in section.blocks %}
         {% case block.type %}
+
+		  {% when 'help' %}
+		  {% comment %}
+          help
+		  {% endcomment %}
+            <div class="grid__item {{ footer_column_width }} footer__item footer__item--contact {% if settings.footer_show_methods_of_payment %}footer__item--contact-half{% endif %}" {{ block.shopify_attributes }}>
+                {% if block.settings.help_text != blank %}
+                  <h4 class="heading--add-small">{{ block.settings.title | upcase }}</h4>
+                  <div>{{ block.settings.help_text }}</div>
+                {% endif %}
+            </div>
+        <!--   -->
+
+		  {% when 'subscription' %}
+        <div class="grid__item {{ footer_column_width }} footer__item footer__item--contact subscribe-form subscribe-form--footer">
+          <h4 class="heading--add-small">{{ block.settings.title | upcase }}</h4>
+
+          <div class="subscribe-form subscribe-form--footer">
+				  {% comment %}
+                Snippet for MailChimp subscribe form
+                For setting go to Admin -> Theme -> Customize Theme -> Homepage
+				  {% endcomment %}
+				  {% include 'subscribe-form-mailchimp' %}
+          </div>
+          <em>{{ block.settings.sub_title }}</em>
+
+        </div>
+
+        <!--   -->
       
           {% when 'address' %}
       		{% comment %}
@@ -195,7 +224,7 @@
 {% schema %}
   {
     "name": "Footer",
-    "max_blocks": 4,
+    "max_blocks": 5,
     "settings": [
 	  {
         "type": "header",
@@ -371,6 +400,47 @@
             "id": "title",
             "label": "Title",
             "default": "Payment methods"
+          }
+        ]
+      },
+
+      {
+        "type": "help",
+        "name": "Help Information",
+        "limit": 1,
+        "settings": [
+          {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Help"
+          },
+          {
+          "type": "textarea",
+          "id": "help_text",
+          "label": "Contact info text",
+          "default": "<ul><li><i class='fa fa-envelope'><\/i><a href='mailto:help@snackoo.com'>help@snackoo.com<\/a><\/li><li><i class='fa fa-phone'><\/i>912-823-5448<\/li><\/ul>",
+                "info": "Use basic HTML to format text"
+          }
+        ]
+      },
+
+      {
+        "type": "subscription",
+        "name": "sub Information",
+        "limit": 1,
+        "settings": [
+          {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Get the offers"
+          },
+          {
+          "type": "textarea",
+          "id": "sub_title",
+          "label": "Contact info text",
+          "default": "sign up for our emails"
           }
         ]
       }
